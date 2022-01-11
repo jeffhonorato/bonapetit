@@ -1,3 +1,41 @@
 .header {
     background-color: $cor-header;
+    padding-bottom: 5rem;
+
+
+        .logo {
+            width: 25rem;
+            margin: 0 auto;
+        }
+        
+        .nav__itens {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.6rem;
+            justify-content: center;
+            
+        }
+
+        .nav__link {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .3rem;
+            background-color: $cor-menu-itens;
+            padding: 1rem;
+            border-radius: 10px;
+            align-items: center;
+            box-shadow: 1px 2px 8px 4px #fff;
+            
+        }
+
+        .nav__icone {
+            font-size: 1.4rem;
+            color: #000;
+        }
+
+        .nav__item {
+            font-family: $fonte-subtitulo;
+            font-size: 1.4rem;
+            color: #000;
+        }
 }

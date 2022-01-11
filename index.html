@@ -4,21 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Neucha&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <title>Bonapettit</title>
 </head>
 <body>
+    <!-- INICIO HEADER -->
     <header class="header">
+        <picture>
+            <img src="./img/logo.png" alt="logo principal" class="logo">
+        </picture>
+        
         <nav class="nav">
             <ul class="nav__itens">
-                <a href="">
-
-                    <li class="nav__item"></li>
+                <a href="" class="nav__link">
+                    <ion-icon name="home-outline" class="nav__icone"></ion-icon>
+                    <li class="nav__item">Inicio</li>
                 </a>
-                
+                <a href="#cardapio" class="nav__link">
+                    <ion-icon name="pizza-outline" class="nav__icone"></ion-icon>
+                    <li class="nav__item">Cardapio</li>
+                </a>
+                <a href="#galeria" class="nav__link">
+                    <ion-icon name="camera-outline" class="nav__icone"></ion-icon>
+                    <li class="nav__item">Galeria</li>
+                </a>
+                <a href="#sobre" class="nav__link">
+                    <ion-icon name="restaurant-outline" class="nav__icone"></ion-icon>
+                    <li class="nav__item">Sobre</li>
+                </a>
+                <a href="#contato" class="nav__link">
+                    <ion-icon name="location-outline" class="nav__icone"></ion-icon>
+                    <li class="nav__item">Contato</li>
+                </a>
             </ul>
         </nav>
     </header>
+    <!-- FIM HEADER -->
+
+    <!-- INICIO MAIN -->
+    <main class="main">
+        <article class="cardapio" id="cardapio">
+            <h1 class="titulo__principal">Seja Bem Vindo a <br> BonAppetit</h1>
+
+            <div class="cardapio__menu">
+
+            </div>
+        </article>
+    </main>
+    <!-- FIM MAIN -->
+    
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -1,0 +1,20 @@
+.cardapio {
+    background-image: url("../img/cardapio/background-cardapio-titulo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+
+        .titulo__principal {
+            font-family: $fonte-titulo;
+            color: #fff;
+            font-size: 9rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+}
+

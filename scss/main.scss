@@ -1,11 +1,21 @@
 /********** VARIAVEIS **********/
 $cor-header: #291528;
+$cor-menu-itens: #ff6600;
+$cor-section1: #E1E6E1;
+$cor-section2: #E1E6E1;
+$fonte-titulo: 'Tangerine', cursive;
+$fonte-subtitulo: 'Merienda', cursive;
+$fonte-corpo: 'Neucha', cursive;
 
 /********** CONFIGURTAÇÂO **********/
 * {
-    border: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 ul, li {
@@ -22,3 +32,7 @@ img {
     display: block;
 }
 
+
+/********** MONTAGEM DO SITE **********/
+@import "header";
+@import "cardapio";

@@ -1,24 +1,86 @@
 @charset "UTF-8";
 /********** VARIAVEIS **********/
 /********** CONFIGURTAÇÂO **********/
-/* line 5, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/bonapetit/scss/main.scss */
 * {
-  border: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-/* line 11, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/bonapetit/scss/main.scss */
+html {
+  scroll-behavior: smooth;
+}
+
 ul, li {
-  list-style: none; }
+  list-style: none;
+}
 
-/* line 15, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/bonapetit/scss/main.scss */
 a {
   display: block;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-/* line 20, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/bonapetit/scss/main.scss */
 img {
   max-width: 100%;
-  display: block; }
+  display: block;
+}
 
-/*# sourceMappingURL=main.css.map */
+/********** MONTAGEM DO SITE **********/
+.header {
+  background-color: #291528;
+  padding-bottom: 5rem;
+}
+
+.header .logo {
+  width: 25rem;
+  margin: 0 auto;
+}
+
+.header .nav__itens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  justify-content: center;
+}
+
+.header .nav__link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+  background-color: #ff6600;
+  padding: 1rem;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 1px 2px 8px 4px #fff;
+}
+
+.header .nav__icone {
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.header .nav__item {
+  font-family: "Merienda", cursive;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.cardapio {
+  background-image: url("../img/cardapio/background-cardapio-titulo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.cardapio .titulo__principal {
+  font-family: "Tangerine", cursive;
+  color: #fff;
+  font-size: 9rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
