@@ -87,6 +87,12 @@ img {
   color: #000;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .header .nav__icone {
+    font-size: 1rem;
+  }
+}
+
 .header .nav__item {
   font-family: "Merienda", cursive;
   font-size: 1.4rem;
@@ -95,7 +101,7 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .header .nav__item {
-    font-size: 1rem;
+    font-size: .8rem;
   }
 }
 

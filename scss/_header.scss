@@ -51,6 +51,10 @@
         .nav__icone {
             font-size: 1.4rem;
             color: #000;
+
+                @include celular {
+                    font-size: 1rem;  
+                }
         }
 
         .nav__item {
@@ -59,7 +63,7 @@
             color: #000;
 
                 @include celular {
-                    font-size: 1rem;
+                    font-size: .8rem;
                 }
         }
 }
