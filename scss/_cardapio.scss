@@ -80,6 +80,7 @@
         grid-template-columns: 1fr;
         margin: 0 auto;
         box-shadow: 1px 1px 15px 2px $cor-menu-itens;
+        padding-bottom: 1.5rem;
 
             .pizza__titulo {
                 font-family: $fonte-subtitulo;
@@ -91,6 +92,11 @@
             .card__pizza {
                 padding: 1rem;
                 border-bottom: 1px solid #fff;
+
+                    &:hover {
+                        background-color: #6b6b6b;
+                        transition: .6s;
+                    }
             }
 
             .sabor {
@@ -119,6 +125,37 @@
                 border-radius: 5px;
                 font-family: $fonte-corpo;
                 font-size: 1.4rem;
+            }
+
+            .link__cardapio {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin: 1rem;
+                font-family: $fonte-corpo;
+                background-color: $cor-section1;
+                max-width: 220px;
+                text-align: center;
+                border-radius: 10px;
+                border: 1px solid $cor-menu-itens;
+                color: #fff;
+                padding: 0.8rem;
+
+                    &:hover {
+                        background-color: $cor-menu-itens;
+                        border: 1px solid #fff;
+                        transition: all .6s;
+                    }
+            }
+
+            .contato__cardapio {   
+                font-size: 1.5rem; 
+                color: #000;    
+            }
+
+            .link__ico {
+                font-size: 1.5rem;
+                color: #000;
             }
     }
 
