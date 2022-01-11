@@ -9,7 +9,7 @@
             flex-wrap: wrap;
             gap: 2.5rem;
             justify-content: center;
-            // align-items: center;
+            padding-bottom: 4rem;
         }
 
         .endereco {
@@ -25,8 +25,16 @@
             color: #fff;
         }
 
+        .redes__titulo {
+            font-family: $fonte-corpo;
+            font-size: 1.5rem;
+            color: $cor-menu-itens;
+            margin-top: 2rem;
+        }
+
         .footer__redes {
             display: flex;
+            justify-content: center;
         }
 
         .titulo__pagamento {
@@ -45,10 +53,42 @@
             color: $cor-menu-itens;
         }
 
-        .dias,
-        .horario {
+        .dias {
             font-family: $fonte-corpo;
             font-size: 1.4rem;
             color: #fff;
+        }
+
+        .desenvolvedor {
+            background-color: $cor-header;
+            padding: .5rem 0;
+        }
+
+        .desenvolvedor img {
+            margin: 0 auto;
+            width: 35px;
+        }
+
+        .desenvolvedor p {
+            text-align: center;
+            font-family: $fonte-corpo;
+            color: #fff;
+        }
+
+        .desenvolvido__link {
+            text-align: center;
+            font-family: $fonte-corpo;
+            color: #fff;
+            width: 120px;
+            padding: 0.4rem;
+            margin: 0 auto;
+            border-radius: 5px;
+            border: 1px solid #fff;
+                
+                &:hover {
+                    background-color: $cor-menu-itens;
+                    transition: all .6s;
+                    
+                }
         }
 }

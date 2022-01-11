@@ -299,6 +299,7 @@ img {
   flex-wrap: wrap;
   gap: 2.5rem;
   justify-content: center;
+  padding-bottom: 4rem;
 }
 
 .footer .endereco {
@@ -314,8 +315,16 @@ img {
   color: #fff;
 }
 
+.footer .redes__titulo {
+  font-family: "Neucha", cursive;
+  font-size: 1.5rem;
+  color: #ff6600;
+  margin-top: 2rem;
+}
+
 .footer .footer__redes {
   display: flex;
+  justify-content: center;
 }
 
 .footer .titulo__pagamento {
@@ -334,9 +343,40 @@ img {
   color: #ff6600;
 }
 
-.footer .dias,
-.footer .horario {
+.footer .dias {
   font-family: "Neucha", cursive;
   font-size: 1.4rem;
   color: #fff;
+}
+
+.footer .desenvolvedor {
+  background-color: #291528;
+  padding: .5rem 0;
+}
+
+.footer .desenvolvedor img {
+  margin: 0 auto;
+  width: 35px;
+}
+
+.footer .desenvolvedor p {
+  text-align: center;
+  font-family: "Neucha", cursive;
+  color: #fff;
+}
+
+.footer .desenvolvido__link {
+  text-align: center;
+  font-family: "Neucha", cursive;
+  color: #fff;
+  width: 120px;
+  padding: 0.4rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+.footer .desenvolvido__link:hover {
+  background-color: #ff6600;
+  transition: all .6s;
 }
