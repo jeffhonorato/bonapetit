@@ -12,8 +12,28 @@
     align-items: center;
     gap: 4rem;
 
+        @include celular {
+            height: 300vh;
+            gap: 0.4rem;
+        }
+
+        @include tablet {
+            height: 300vh;
+            gap: 0.4rem;
+        }
+
+        @include desktop {
+            height: 220vh;
+            gap: 0.4rem;
+        }
+
+
         .img__logo__sobre {
             width: 350px;
+
+                @include celular {
+                    width: 280px;
+                }
         }
 
         .sobre__info {
