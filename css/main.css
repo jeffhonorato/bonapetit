@@ -50,6 +50,15 @@ img {
   justify-content: center;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .header .nav__itens {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: .4rem;
+  }
+}
+
 .header .nav__link {
   display: flex;
   flex-wrap: wrap;
@@ -67,6 +76,12 @@ img {
   transition: all .6s;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .header .nav__link {
+    padding: .4rem .3rem;
+  }
+}
+
 .header .nav__icone {
   font-size: 1.4rem;
   color: #000;
@@ -76,6 +91,12 @@ img {
   font-family: "Merienda", cursive;
   font-size: 1.4rem;
   color: #000;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .header .nav__item {
+    font-size: 1rem;
+  }
 }
 
 .cardapio__titulo {
@@ -139,8 +160,6 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100vw;
-    justify-content: center;
-    text-align: center;
     padding: .4rem;
     gap: .5rem;
   }

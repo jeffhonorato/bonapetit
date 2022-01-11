@@ -17,6 +17,13 @@
             flex-wrap: wrap;
             gap: 1.6rem;
             justify-content: center;
+
+                @include celular {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 1rem;
+                    padding: .4rem;
+                }
         }
 
         .nav__link {
@@ -34,6 +41,10 @@
                     background-color: #ebac5a;
                     transition: all .6s;
                 }
+
+                @include celular {
+                    padding: .4rem .3rem;
+                }
             
         }
 
@@ -46,5 +57,9 @@
             font-family: $fonte-subtitulo;
             font-size: 1.4rem;
             color: #000;
+
+                @include celular {
+                    font-size: 1rem;
+                }
         }
 }
