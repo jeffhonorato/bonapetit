@@ -34,13 +34,11 @@ img {
 
 
 /********** MIXINS **********/
-// @mixin celular {
-//     @media(min-width: 0px) and (max-width: 480px) {
-//         content {
-
-//         }
-//     }
-// }
+@mixin celular {
+    @media(min-width: 0px) and (max-width: 480px) {
+        @content;
+    }
+}
 
 
 /********** MONTAGEM DO SITE **********/

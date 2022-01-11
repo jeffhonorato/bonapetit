@@ -37,6 +37,12 @@ img {
   margin: 0 auto;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .header .logo {
+    width: 15rem;
+  }
+}
+
 .header .nav__itens {
   display: flex;
   flex-wrap: wrap;
@@ -92,6 +98,12 @@ img {
   height: 100vh;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .cardapio__titulo .titulo__principal {
+    font-size: 3.5rem;
+  }
+}
+
 .cardapio__container {
   background-image: url("../img/cardapio/background-cardapio.jpg");
   background-position: center;
@@ -108,12 +120,30 @@ img {
   font-size: 3rem;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .cardapio__container .cardapio__sub {
+    font-size: 1.5rem;
+  }
+}
+
 .cardapio__container .cardapio__botoes {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
   margin-bottom: 5rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .cardapio__container .cardapio__botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    padding: .4rem;
+    gap: .5rem;
+  }
 }
 
 .cardapio__container .cardapio__btn {
@@ -133,6 +163,13 @@ img {
   background-color: #fff;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .cardapio__container .cardapio__btn {
+    gap: .3rem;
+    padding: .2rem 1rem;
+  }
+}
+
 .cardapio__container .btn__pizza,
 .cardapio__container .btn__carnes,
 .cardapio__container .btn__massas,
@@ -141,8 +178,23 @@ img {
   font-size: 1.5rem;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .cardapio__container .btn__pizza,
+  .cardapio__container .btn__carnes,
+  .cardapio__container .btn__massas,
+  .cardapio__container .btn__bebidas {
+    font-size: 1rem;
+  }
+}
+
 .cardapio__container .cardapio__img {
   width: 60px;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .cardapio__container .cardapio__img {
+    width: 35px;
+  }
 }
 
 .cardapio__card {
