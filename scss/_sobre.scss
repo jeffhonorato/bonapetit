@@ -1,0 +1,38 @@
+.sobre {
+    background-image: url("../img/sobre/background-sobre.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 160vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+        .img__logo__sobre {
+            width: 350px;
+        }
+
+        .sobre__info {
+            width: 500px;
+            // padding-top: 4rem;
+        }
+
+        .sobre__titulo {
+            color: $cor-menu-itens;
+            font-family: $fonte-titulo;
+            font-size: 6rem;
+            text-align: center;
+        }
+
+        .sobre__p {
+            color: #fff;
+            font-family: $fonte-corpo;
+            font-size: 1.4rem;
+            padding: 1rem;
+        }
+
+}
