@@ -117,6 +117,11 @@ img {
   grid-template-columns: 1fr;
   margin: 0 auto;
   box-shadow: 1px 1px 15px 2px #ff6600; }
+  .cardapio__card .pizza__titulo {
+    font-family: "Merienda", cursive;
+    text-align: center;
+    font-size: 4rem;
+    color: #ff6600; }
   .cardapio__card .card__pizza {
     padding: 1rem;
     border-bottom: 1px solid #fff; }
@@ -140,3 +145,9 @@ img {
     border-radius: 5px;
     font-family: "Neucha", cursive;
     font-size: 1.4rem; }
+
+.js-tabConteudo {
+  display: none; }
+
+.js-tabConteudo.ativo {
+  display: block; }

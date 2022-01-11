@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Neucha&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <title>Bonapettit</title>
@@ -56,19 +57,19 @@
                 
     
                 <div class="cardapio__botoes">
-                    <a class="cardapio__btn"> 
+                    <a class="cardapio__btn js-btnMenu"> 
                         <p class="btn__pizza">Pizzas</p>
                         <img src="./img/cardapio/btn-pizza.png" alt="" class="cardapio__img">
                     </a>
-                    <a class="cardapio__btn"> 
+                    <a class="cardapio__btn js-btnMenu"> 
                         <p class="btn__carnes">Carnes</p>
                         <img src="./img/cardapio/btn-carnes.png" alt="" class="cardapio__img">
                     </a>
-                    <a class="cardapio__btn"> 
+                    <a class="cardapio__btn js-btnMenu"> 
                         <p class="btn__massas">Massas</p>
                         <img src="./img/cardapio/btn-massas.png" alt="" class="cardapio__img">
                     </a>
-                    <a class="cardapio__btn">
+                    <a class="cardapio__btn js-btnMenu">
                         <p class="btn__bebidas">Bebidas</p>
                         <img src="./img/cardapio/btn-bebidas.png" alt="" class="cardapio__img">
                     </a>
@@ -76,7 +77,8 @@
     
                 <div class="cardapio__menu">
                     <div class="cardapio__cards">
-                        <div class="cardapio__card pizza">
+                        <div class="cardapio__card pizza js-tabConteudo">
+                            <h2 class="pizza__titulo">Pizzas</h2>
                             <div class="card__pizza">
                                 <p class="sabor">Portuguesa</p>
                                 <p class="ingredientes">Frango - Milho - Mussarela - Cebola - Tomate</p>
@@ -148,7 +150,8 @@
                             </div>
                         </div>
 
-                        <div class="cardapio__card carnes">
+                        <div class="cardapio__card carnes js-tabConteudo">
+                            <h2 class="pizza__titulo">Carnes</h2>
                             <div class="card__pizza card__carnes">
                                 <p class="sabor">Portuguesa</p>
                                 <p class="ingredientes">Frango - Milho - Mussarela - Cebola - Tomate</p>
@@ -220,7 +223,8 @@
                             </div>
                         </div>
 
-                        <div class="cardapio__card massas">
+                        <div class="cardapio__card massas js-tabConteudo">
+                            <h2 class="pizza__titulo">Massas</h2>
                             <div class="card__pizza card__carnes">
                                 <p class="sabor">Portuguesa</p>
                                 <p class="ingredientes">Frango - Milho - Mussarela - Cebola - Tomate</p>
@@ -292,7 +296,8 @@
                             </div>
                         </div>
 
-                        <div class="cardapio__card bebidas">
+                        <div class="cardapio__card bebidas js-tabConteudo">
+                            <h2 class="pizza__titulo">Bebidas</h2>
                             <div class="card__pizza card__carnes">
                                 <p class="sabor">Portuguesa</p>
                                 <p class="ingredientes">Frango - Milho - Mussarela - Cebola - Tomate</p>
@@ -363,7 +368,6 @@
                                 </div>
                             </div>
                         </div>
-
                         
                     </div>
                 </div>

@@ -81,6 +81,13 @@
         margin: 0 auto;
         box-shadow: 1px 1px 15px 2px $cor-menu-itens;
 
+            .pizza__titulo {
+                font-family: $fonte-subtitulo;
+                text-align: center;
+                font-size: 4rem;
+                color: $cor-menu-itens;
+            }
+
             .card__pizza {
                 padding: 1rem;
                 border-bottom: 1px solid #fff;
@@ -114,5 +121,14 @@
                 font-size: 1.4rem;
             }
     }
+
+    .js-tabConteudo {
+        display: none;
+    }
+
+    .js-tabConteudo.ativo {
+        display: block;
+    }
+
 
 
