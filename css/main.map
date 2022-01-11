@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../scss/main.scss"
+	],
+	"sourcesContent": [
+		"/********** VARIAVEIS **********/\r\n$cor-header: #291528;\r\n\r\n/********** CONFIGURTAÇÂO **********/\r\n* {\r\n    border: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\nul, li {\r\n    list-style: none;\r\n}\r\n\r\na {\r\n    display: block;\r\n    text-decoration: none;\r\n}\r\n\r\nimg {\r\n    max-width: 100%;\r\n    display: block;\r\n}\r\n\r\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,iCAAiC;AAGjC,qCAAqC;;AACrC,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU,GACzB;;;AAED,AAAA,EAAE,EAAE,EAAE,CAAC;EACH,UAAU,EAAE,IAAI,GACnB;;;AAED,AAAA,CAAC,CAAC;EACE,OAAO,EAAE,KAAK;EACd,eAAe,EAAE,IAAI,GACxB;;;AAED,AAAA,GAAG,CAAC;EACA,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,KAAK,GACjB"
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/********** VARIAVEIS **********/
+/********** CONFIGURTAÇÂO **********/
+/* line 5, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/bonapetit/scss/main.scss */
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* line 11, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/bonapetit/scss/main.scss */
+ul, li {
+  list-style: none; }
+
+/* line 15, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/bonapetit/scss/main.scss */
+a {
+  display: block;
+  text-decoration: none; }
+
+/* line 20, ../../../Desktop/Programação/REPOSITORIO-GIT-GITHUB/bonapetit/scss/main.scss */
+img {
+  max-width: 100%;
+  display: block; }
+
+/*# sourceMappingURL=main.css.map */
