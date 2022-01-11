@@ -4,9 +4,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     
-    
+
     .galeria__titulo {
         margin-bottom: 4rem;
+        font-family: $fonte-subtitulo;
+        color: $cor-menu-itens;
+        text-align: center;
+        padding-top: 4rem;
+        font-size: 3rem;
     }
 
     .galeria__container {
@@ -27,7 +32,8 @@
       }
 
       .swiper-slide img {
-          box-shadow: 2px 2px 14px 2px #000;
+          box-shadow: 2px 2px 14px 2px $cor-menu-itens;
+          border: solid 1px #fff;
       }
 
 }
