@@ -25,6 +25,12 @@
             border-radius: 10px;
             align-items: center;
             box-shadow: 1px 2px 8px 4px #fff;
+
+                &:hover {
+                    box-shadow: 0px 0px 1px 1px #fff;
+                    background-color: #ebac5a;
+                    transition: all .6s;
+                }
             
         }
 
