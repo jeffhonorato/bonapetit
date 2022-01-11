@@ -288,8 +288,55 @@ img {
 }
 
 .footer {
-  background-image: url("../img/galeria/background-galeria.jpg");
+  background-image: url("../img/sobre/background-sobre.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.footer .footer__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.footer .endereco {
+  font-family: "Neucha", cursive;
+  font-size: 2rem;
+  color: #ff6600;
+}
+
+.footer .rua,
+.footer .cidade {
+  font-family: "Neucha", cursive;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.footer .footer__redes {
+  display: flex;
+}
+
+.footer .titulo__pagamento {
+  font-family: "Neucha", cursive;
+  font-size: 2rem;
+  color: #ff6600;
+}
+
+.footer .bandeiras__pag {
+  width: 300px;
+}
+
+.footer .titulo__funcionamento {
+  font-family: "Neucha", cursive;
+  font-size: 2rem;
+  color: #ff6600;
+}
+
+.footer .dias,
+.footer .horario {
+  font-family: "Neucha", cursive;
+  font-size: 1.4rem;
+  color: #fff;
 }

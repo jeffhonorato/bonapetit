@@ -1,6 +1,54 @@
 .footer {
-    background-image: url("../img/galeria/background-galeria.jpg");
+    background-image: url("../img/sobre/background-sobre.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+        .footer__info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            justify-content: center;
+            // align-items: center;
+        }
+
+        .endereco {
+            font-family: $fonte-corpo;
+            font-size: 2rem;
+            color: $cor-menu-itens;
+        }
+
+        .rua,
+        .cidade  {
+            font-family: $fonte-corpo;
+            font-size: 1.4rem;
+            color: #fff;
+        }
+
+        .footer__redes {
+            display: flex;
+        }
+
+        .titulo__pagamento {
+            font-family: $fonte-corpo;
+            font-size: 2rem;
+            color: $cor-menu-itens;
+        }
+
+        .bandeiras__pag {
+            width: 300px;
+        }
+
+        .titulo__funcionamento {
+            font-family: $fonte-corpo;
+            font-size: 2rem;
+            color: $cor-menu-itens;
+        }
+
+        .dias,
+        .horario {
+            font-family: $fonte-corpo;
+            font-size: 1.4rem;
+            color: #fff;
+        }
 }
