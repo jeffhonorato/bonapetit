@@ -129,9 +129,19 @@
                     }
             }
 
+            .card__pizza__item {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
+
+            .pizza__item {
+                width: 6.25rem;
+            }
+
             .sabor {
                 font-family: $fonte-corpo;
-                font-size: 1.5rem;
+                font-size: 1.8rem;
                 color: $cor-menu-itens;
             }
 
