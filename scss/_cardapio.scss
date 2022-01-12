@@ -112,14 +112,14 @@
         box-shadow: 1px 1px 15px 2px $cor-menu-itens;
         padding-bottom: 1.5rem;
 
-            .pizza__titulo {
+            .card__titulo {
                 font-family: $fonte-subtitulo;
                 text-align: center;
                 font-size: 4rem;
                 color: $cor-menu-itens;
             }
 
-            .card__pizza {
+            .card__item {
                 padding: 1rem;
                 border-bottom: 1px solid #fff;
 
@@ -129,13 +129,13 @@
                     }
             }
 
-            .card__pizza__item {
+            .card__cabecalho {
                 display: flex;
                 align-items: center;
                 gap: .5rem;
             }
 
-            .pizza__item {
+            .img__item {
                 width: 6.25rem;
             }
 

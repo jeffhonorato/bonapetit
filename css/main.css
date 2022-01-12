@@ -231,30 +231,30 @@ img {
   padding-bottom: 1.5rem;
 }
 
-.cardapio__card .pizza__titulo {
+.cardapio__card .card__titulo {
   font-family: "Merienda", cursive;
   text-align: center;
   font-size: 4rem;
   color: #ff6600;
 }
 
-.cardapio__card .card__pizza {
+.cardapio__card .card__item {
   padding: 1rem;
   border-bottom: 1px solid #fff;
 }
 
-.cardapio__card .card__pizza:hover {
+.cardapio__card .card__item:hover {
   background-color: #6b6b6b;
   transition: .6s;
 }
 
-.cardapio__card .card__pizza__item {
+.cardapio__card .card__cabecalho {
   display: flex;
   align-items: center;
   gap: .5rem;
 }
 
-.cardapio__card .pizza__item {
+.cardapio__card .img__item {
   width: 6.25rem;
 }
 
