@@ -104,10 +104,12 @@
             }
     }
 
+    // .cardapio__cards {
+    //     display: flex;
+    // }
+
     .cardapio__card {
-        max-width: 980px;
-        display: grid;
-        grid-template-columns: 1fr;
+        max-width: 1240px;
         margin: 0 auto;
         box-shadow: 1px 1px 15px 2px $cor-menu-itens;
         padding-bottom: 1.5rem;
@@ -122,11 +124,13 @@
             .card__item {
                 padding: 1rem;
                 border-bottom: 1px solid #fff;
+                width: 480px;
+                background-color: aqua;
 
-                    &:hover {
-                        background-color: #6b6b6b;
-                        transition: .6s;
-                    }
+                    // &:hover {
+                    //     background-color: #6b6b6b;
+                    //     transition: .6s;
+                    // }
             }
 
             .card__cabecalho {

@@ -223,9 +223,7 @@ img {
 }
 
 .cardapio__card {
-  max-width: 980px;
-  display: grid;
-  grid-template-columns: 1fr;
+  max-width: 1240px;
   margin: 0 auto;
   box-shadow: 1px 1px 15px 2px #ff6600;
   padding-bottom: 1.5rem;
@@ -241,11 +239,8 @@ img {
 .cardapio__card .card__item {
   padding: 1rem;
   border-bottom: 1px solid #fff;
-}
-
-.cardapio__card .card__item:hover {
-  background-color: #6b6b6b;
-  transition: .6s;
+  width: 480px;
+  background-color: aqua;
 }
 
 .cardapio__card .card__cabecalho {
