@@ -224,6 +224,10 @@ img {
 
 .cardapio__card {
   max-width: 1240px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
   margin: 0 auto;
   box-shadow: 1px 1px 15px 2px #ff6600;
   padding-bottom: 1.5rem;
