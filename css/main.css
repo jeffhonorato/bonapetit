@@ -250,14 +250,17 @@ img {
 
 .cardapio__card .card__item {
   padding: 1rem;
-  border: 2px solid #fff;
+  border: 2px solid #ff6600;
+  box-shadow: 1px 1px 10px 1px #fff;
   width: 480px;
 }
 
 .cardapio__card .card__cabecalho {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: .5rem;
+  margin-bottom: .5rem;
 }
 
 .cardapio__card .img__item {
@@ -274,12 +277,14 @@ img {
   font-family: "Neucha", cursive;
   font-size: 1.4rem;
   color: #fff;
-  margin-bottom: .8rem;
+  margin-bottom: .5rem;
+  text-align: center;
 }
 
 .cardapio__card .precos {
   display: flex;
   gap: 2rem;
+  justify-content: center;
 }
 
 .cardapio__card .pequena,
@@ -290,27 +295,20 @@ img {
   border-radius: 5px;
   font-family: "Neucha", cursive;
   font-size: 1.4rem;
+  margin-bottom: 1.4rem;
 }
 
-.cardapio__card .link__cardapio {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 1rem;
+.cardapio__card .btn__pedido {
+  background-color: #E74B2B;
+  padding: .6rem .8rem;
+  border-radius: 5px;
   font-family: "Neucha", cursive;
-  background-color: #E1E6E1;
-  max-width: 220px;
+  font-size: 1.4rem;
+  width: 220px;
   text-align: center;
-  border-radius: 10px;
-  border: 1px solid #ff6600;
+  border: 2px solid #fff;
   color: #fff;
-  padding: 0.8rem;
-}
-
-.cardapio__card .link__cardapio:hover {
-  background-color: #ff6600;
-  border: 1px solid #fff;
-  transition: all .6s;
+  margin: 0 auto;
 }
 
 .cardapio__card .contato__cardapio {

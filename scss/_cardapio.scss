@@ -132,7 +132,8 @@
 
             .card__item {
                 padding: 1rem;
-                border: 2px solid #fff;
+                border: 2px solid $cor-menu-itens;
+                box-shadow: 1px 1px 10px 1px #fff;
                 width: 480px;
                 
 
@@ -145,7 +146,9 @@
             .card__cabecalho {
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 gap: .5rem;
+                margin-bottom: .5rem;
             }
 
             .img__item {
@@ -162,12 +165,14 @@
                 font-family: $fonte-corpo;
                 font-size: 1.4rem;
                 color: #fff;
-                margin-bottom: .8rem;
+                margin-bottom: .5rem;
+                text-align: center;
             }
 
             .precos {
                 display: flex;
                 gap: 2rem;
+                justify-content: center;
             }
 
             .pequena,
@@ -178,28 +183,42 @@
                 border-radius: 5px;
                 font-family: $fonte-corpo;
                 font-size: 1.4rem;
+                margin-bottom: 1.4rem;
             }
 
-            .link__cardapio {
-                display: flex;
-                align-items: center;
-                gap: 0.5rem;
-                margin: 1rem;
+            .btn__pedido {
+                background-color: #E74B2B;
+                padding: .6rem .8rem;
+                border-radius: 5px;
                 font-family: $fonte-corpo;
-                background-color: $cor-section1;
-                max-width: 220px;
+                font-size: 1.4rem;
+                width: 220px;
                 text-align: center;
-                border-radius: 10px;
-                border: 1px solid $cor-menu-itens;
+                border: 2px solid #fff;
                 color: #fff;
-                padding: 0.8rem;
-
-                    &:hover {
-                        background-color: $cor-menu-itens;
-                        border: 1px solid #fff;
-                        transition: all .6s;
-                    }
+                margin: 0 auto;
             }
+
+            // .link__cardapio {
+            //     display: flex;
+            //     align-items: center;
+            //     gap: 0.5rem;
+            //     margin: 1rem;
+            //     font-family: $fonte-corpo;
+            //     background-color: $cor-section1;
+            //     max-width: 220px;
+            //     text-align: center;
+            //     border-radius: 10px;
+            //     border: 1px solid $cor-menu-itens;
+            //     color: #fff;
+            //     padding: 0.8rem;
+
+            //         &:hover {
+            //             background-color: $cor-menu-itens;
+            //             border: 1px solid #fff;
+            //             transition: all .6s;
+            //         }
+            
 
             .contato__cardapio {   
                 font-size: 1.5rem; 
