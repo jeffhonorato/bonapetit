@@ -292,6 +292,7 @@ img {
 .cardapio__card .grande {
   background-color: #ff6600;
   padding: .6rem .8rem;
+  border: 1px solid #fff;
   border-radius: 5px;
   font-family: "Neucha", cursive;
   font-size: 1.4rem;
