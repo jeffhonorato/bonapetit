@@ -28,7 +28,10 @@ img {
 /********** MIXINS **********/
 /********** MONTAGEM DO SITE **********/
 .header {
-  background-color: #291528;
+  background-image: url(../img/background-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-bottom: 5rem;
 }
 
@@ -65,6 +68,7 @@ img {
   gap: .3rem;
   background-color: #ff6600;
   padding: 1rem;
+  border: 2px solid #fff;
   border-radius: 10px;
   align-items: center;
   box-shadow: 1px 2px 8px 4px #fff;
@@ -222,13 +226,12 @@ img {
   }
 }
 
-.cardapio__card {
-  max-width: 1240px;
+.pizza {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin: 0 auto;
+}
+
+.cardapio__card {
+  display: flex;
   box-shadow: 1px 1px 15px 2px #ff6600;
   padding-bottom: 1.5rem;
 }
@@ -242,9 +245,8 @@ img {
 
 .cardapio__card .card__item {
   padding: 1rem;
-  border-bottom: 1px solid #fff;
+  border: 1px solid #fff;
   width: 480px;
-  background-color: aqua;
 }
 
 .cardapio__card .card__cabecalho {
@@ -520,7 +522,7 @@ img {
 }
 
 .footer .desenvolvedor {
-  background-color: #291528;
+  background-color: #000;
   padding: .5rem 0;
 }
 

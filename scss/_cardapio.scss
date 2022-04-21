@@ -108,13 +108,12 @@
     //     display: flex;
     // }
 
-    .cardapio__card {
-        max-width: 1240px;
+    .pizza {
         display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: center;
-        margin: 0 auto;
+    }
+
+    .cardapio__card {
+        display: flex;
         box-shadow: 1px 1px 15px 2px $cor-menu-itens;
         padding-bottom: 1.5rem;
 
@@ -127,9 +126,9 @@
 
             .card__item {
                 padding: 1rem;
-                border-bottom: 1px solid #fff;
+                border: 1px solid #fff;
                 width: 480px;
-                background-color: aqua;
+                
 
                     // &:hover {
                     //     background-color: #6b6b6b;
