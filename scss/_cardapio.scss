@@ -173,6 +173,10 @@
                 display: flex;
                 gap: 2rem;
                 justify-content: center;
+
+                    @include celular {
+                        gap: .5rem; 
+                    }
             }
 
             .pequena,
@@ -185,6 +189,7 @@
                 font-family: $fonte-corpo;
                 font-size: 1.4rem;
                 margin-bottom: 1.4rem;
+                text-align: center;
             }
 
             .btn__pedido {

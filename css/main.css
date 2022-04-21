@@ -287,6 +287,12 @@ img {
   justify-content: center;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .cardapio__card .precos {
+    gap: .5rem;
+  }
+}
+
 .cardapio__card .pequena,
 .cardapio__card .media,
 .cardapio__card .grande {
@@ -297,6 +303,7 @@ img {
   font-family: "Neucha", cursive;
   font-size: 1.4rem;
   margin-bottom: 1.4rem;
+  text-align: center;
 }
 
 .cardapio__card .btn__pedido {
