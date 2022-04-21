@@ -226,10 +226,6 @@ img {
   }
 }
 
-.pizza {
-  display: flex;
-}
-
 .cardapio__card {
   display: flex;
   box-shadow: 1px 1px 15px 2px #ff6600;
@@ -241,11 +237,20 @@ img {
   text-align: center;
   font-size: 4rem;
   color: #ff6600;
+  padding: 1rem;
+}
+
+.cardapio__card .cardapio__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: .6rem;
 }
 
 .cardapio__card .card__item {
   padding: 1rem;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   width: 480px;
 }
 
