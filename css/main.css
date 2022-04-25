@@ -55,10 +55,11 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .header .nav__itens {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    padding: .4rem;
+    position: fixed;
+    top: 240px;
+    left: 4px;
+    display: block;
+    z-index: 100;
   }
 }
 

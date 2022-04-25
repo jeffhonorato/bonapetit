@@ -14,6 +14,13 @@
                     width: 15rem;
                 }
         }
+
+        // .nav {
+
+            
+        // }
+
+        
         
         .nav__itens {
             display: flex;
@@ -22,11 +29,19 @@
             justify-content: center;
 
                 @include celular {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    gap: 1rem;
-                    padding: .4rem;
+                    position: fixed;
+                    top: 240px;
+                    left: 4px;
+                    display: block;
+                    z-index: 100;
                 }
+
+                // @include celular {
+                //     display: grid;
+                //     grid-template-columns: 1fr 1fr 1fr;
+                //     gap: 1rem;
+                //     padding: .4rem;
+                // }
         }
 
         .nav__link {
