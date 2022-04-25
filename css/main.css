@@ -46,21 +46,57 @@ img {
   }
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .header .nav {
+    position: fixed;
+    top: 215px;
+    left: 0;
+    display: block;
+    z-index: 1000;
+  }
+}
+
+.header .menu__mobile {
+  position: fixed;
+  top: 250px;
+  left: 0;
+  display: block;
+  width: 60px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .header .menu__mobile {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    display: block;
+    z-index: 2000;
+    cursor: pointer;
+  }
+}
+
 .header .nav__itens {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.6rem;
-  justify-content: center;
+  position: fixed;
+  top: 330px;
+  display: none;
+  z-index: 10000;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
   .header .nav__itens {
     position: fixed;
-    top: 240px;
+    top: 275px;
     left: 4px;
-    display: block;
+    display: none;
     z-index: 100;
   }
+}
+
+.header .nav__itens.ativo {
+  display: block;
+  animation: showTop .6s forwards;
 }
 
 .header .nav__link {
@@ -68,7 +104,7 @@ img {
   flex-wrap: wrap;
   gap: .3rem;
   background-color: #ff6600;
-  padding: 1rem;
+  padding: .5rem;
   border: 2px solid #fff;
   border-radius: 10px;
   align-items: center;
@@ -88,7 +124,7 @@ img {
 }
 
 .header .nav__icone {
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: #000;
 }
 
@@ -100,13 +136,24 @@ img {
 
 .header .nav__item {
   font-family: "Merienda", cursive;
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: #000;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
   .header .nav__item {
     font-size: .8rem;
+  }
+}
+
+@keyframes showTop {
+  from {
+    opacity: 0;
+    margin-bottom: 10px;
+  }
+  to {
+    opacity: 1;
+    margin-bottom: 0px;
   }
 }
 

@@ -14,3 +14,11 @@ btnMenu.forEach((itemMenu, index) => {
         activeTab(index);
     });
 });
+
+// ATIVANDO MENU MOBILE 
+const menuMobile = document.querySelector(".menu__mobile");
+
+menuMobile.addEventListener("click", () => {
+    let menu = document.querySelector(".nav__itens ");
+    menu.classList.toggle("ativo");
+})
