@@ -14,7 +14,7 @@
 
         @include celular {
             height: 300vh;
-            gap: 0.4rem;
+            gap: 0rem;
         }
 
         @include tablet {
@@ -31,8 +31,10 @@
         .img__logo__sobre {
             width: 350px;
 
+
                 @include celular {
                     width: 280px;
+                    margin: -120px;
                 }
         }
 
