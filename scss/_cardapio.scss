@@ -203,6 +203,13 @@
                 border: 2px solid #fff;
                 color: #fff;
                 margin: 0 auto;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: #000;
+                        border: 2px solid #E74B2B;
+                        transition: all .6s;
+                    }     
             }
 
             // .link__cardapio {
