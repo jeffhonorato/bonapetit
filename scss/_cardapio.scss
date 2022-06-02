@@ -63,9 +63,9 @@
             .cardapio__btn {
                 display: flex;
                 align-items: center;
-                gap: .5rem;
+                gap: .2rem;
                 background-color: $cor-menu-itens;
-                padding: .6rem 1rem;
+                padding: .4rem;
                 cursor: pointer;
                 border-radius: 10px;
                 box-shadow: 1px 1px 0px 2px #fff;
@@ -88,7 +88,7 @@
             .btn__massas,
             .btn__bebidas {
                 font-family: $fonte-corpo;
-                font-size: 1.5rem;
+                font-size: 1.4rem;
 
                     @include celular {
                         font-size: 1rem;
@@ -136,7 +136,7 @@
                 border-radius: 6px;
                 box-shadow: 1px 1px 10px 1px #fff;
                 max-width: 300px;
-                
+            
 
                     &:hover {
                         background-color: rgba(255,255,255, .1);
@@ -153,16 +153,16 @@
             }
 
             .img__item {
-                width: 6.25rem;
+                width: 5.6rem;
             }
 
             .sabor {
-                font-family: $fonte-corpo;
-                font-size: 1.8rem;
+                font-family: $fonte-titulo;
+                font-size: 3rem;
                 color: $cor-menu-itens;
 
                     @include celular {
-                        font-size: 1.4rem;
+                        font-size: 1.5rem;
                     }
             }
 
@@ -182,7 +182,7 @@
                 display: flex;
                 gap: .5rem;
                 justify-content: center;
-                margin-bottom: 1rem;
+                margin-bottom: 1.4rem;
 
                     @include celular {
                         gap: .5rem; 
@@ -214,8 +214,8 @@
                 padding: .6rem .8rem;
                 border-radius: 5px;
                 font-family: $fonte-corpo;
-                font-size: 1.4rem;
-                width: 220px;
+                font-size: 1.2rem;
+                width: 180px;
                 text-align: center;
                 border: 2px solid #fff;
                 color: #fff;
