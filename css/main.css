@@ -307,6 +307,11 @@ img {
   max-width: 300px;
 }
 
+.cardapio__card .card__item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all .6s;
+}
+
 .cardapio__card .card__cabecalho {
   display: flex;
   align-items: center;
@@ -325,12 +330,24 @@ img {
   color: #ff6600;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .cardapio__card .sabor {
+    font-size: 1.4rem;
+  }
+}
+
 .cardapio__card .ingredientes {
   font-family: "Neucha", cursive;
   font-size: 1.4rem;
   color: #fff;
   margin-bottom: .5rem;
   text-align: center;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .cardapio__card .ingredientes {
+    font-size: 1.2rem;
+  }
 }
 
 .cardapio__card .precos {
@@ -362,6 +379,14 @@ img {
 .cardapio__card .media strong,
 .cardapio__card .grande strong {
   font-size: 1.2rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .cardapio__card .pequena,
+  .cardapio__card .media,
+  .cardapio__card .grande {
+    font-size: 1rem;
+  }
 }
 
 .cardapio__card .btn__pedido {
@@ -419,6 +444,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 130vh;
 }
 
 .galeria .galeria__titulo {
@@ -442,7 +468,6 @@ img {
 
 .galeria .swiper {
   width: 100%;
-  height: 100vh;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -450,8 +475,9 @@ img {
 .galeria .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 600px;
-  height: 600px;
+  width: 540px;
+  height: 540px;
+  padding-bottom: 2rem;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {

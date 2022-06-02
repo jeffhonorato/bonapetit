@@ -138,10 +138,10 @@
                 max-width: 300px;
                 
 
-                    // &:hover {
-                    //     background-color: #6b6b6b;
-                    //     transition: .6s;
-                    // }
+                    &:hover {
+                        background-color: rgba(255,255,255, .1);
+                        transition: all .6s;
+                    }
             }
 
             .card__cabecalho {
@@ -160,6 +160,10 @@
                 font-family: $fonte-corpo;
                 font-size: 1.8rem;
                 color: $cor-menu-itens;
+
+                    @include celular {
+                        font-size: 1.4rem;
+                    }
             }
 
             .ingredientes {
@@ -168,6 +172,10 @@
                 color: #fff;
                 margin-bottom: .5rem;
                 text-align: center;
+
+                @include celular {
+                    font-size: 1.2rem;
+                }
             }
 
             .precos {
@@ -190,11 +198,14 @@
                 border-radius: 5px;
                 font-family: $fonte-corpo;
                 font-size: 1.2rem;
-                
                 text-align: center;
 
                     strong {
                         font-size: 1.2rem;
+                    }
+
+                    @include celular {
+                        font-size: 1rem;
                     }
             }
 

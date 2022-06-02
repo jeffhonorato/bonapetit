@@ -3,6 +3,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 130vh;
     
 
     .galeria__titulo {
@@ -24,7 +25,7 @@
 
     .swiper {
         width: 100%;
-        height: 100vh;
+        
         padding-top: 50px;
         padding-bottom: 50px;
       }
@@ -32,8 +33,9 @@
       .swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 600px;
-        height: 600px;
+        width: 540px;
+        height: 540px;
+        padding-bottom: 2rem;
 
             @include celular {
                 width: 300px;
