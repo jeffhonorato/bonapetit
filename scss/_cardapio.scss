@@ -149,7 +149,7 @@
                 align-items: center;
                 justify-content: center;
                 gap: .5rem;
-                margin-bottom: .5rem;
+                margin-bottom: 1rem;
             }
 
             .img__item {
@@ -159,6 +159,7 @@
             .sabor {
                 font-family: $fonte-titulo;
                 font-size: 3rem;
+                font-weight: bold;
                 color: $cor-menu-itens;
 
                     @include celular {
