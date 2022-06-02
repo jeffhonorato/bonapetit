@@ -29,7 +29,7 @@
 
         .menu__mobile {
             position: fixed;
-            top: 250px;
+            top: 10px;
             left: 0;
             display: block;
             width: 60px;
@@ -38,7 +38,7 @@
 
                 @include celular {
                     position: fixed;
-                    top: 200px;
+                    top: 10px;
                     left: 0;
                     display: block;
                     z-index: 2000;
@@ -48,14 +48,14 @@
 
         .nav__itens {
             position: fixed;
-            top: 330px;
+            top: 80px;
             left: 4px;
             display: none;
             z-index: 10000;
 
                 @include celular {
                     position: fixed;
-                    top: 275px;
+                    top: 80px;
                     left: 4px;
                     display: none;
                     z-index: 100;
