@@ -128,6 +128,8 @@
                 align-items: center;
                 gap: 2rem;
                 padding: .6rem;
+                perspective: 1000px;
+               
             }
 
             .card__item {
@@ -136,11 +138,17 @@
                 border-radius: 6px;
                 box-shadow: 1px 1px 10px 1px #fff;
                 max-width: 300px;
-            
+                // transform: rotateX(5deg);
+                transform: rotateX(5deg);
 
                     &:hover {
                         background-color: rgba(255,255,255, .1);
                         transition: all .6s;
+                        transform: rotateY(0deg);
+                    }
+
+                    @include celular {
+                        transform: none;
                     }
             }
 
@@ -163,7 +171,7 @@
                 color: $cor-menu-itens;
 
                     @include celular {
-                        font-size: 1.5rem;
+                        font-size: 2.7rem;
                     }
             }
 
@@ -200,6 +208,7 @@
                 font-family: $fonte-corpo;
                 font-size: 1.2rem;
                 text-align: center;
+                background-color: #FF8F33;
 
                     strong {
                         font-size: 1.2rem;
@@ -210,17 +219,31 @@
                     }
             }
 
+            // .pequena {
+            //     background-color: ; 
+            // }
+
+            // .media {
+            //     background-color: #FFB070; 
+            // }
+
+            // .grande {
+            //     background-color: #B85300;
+            // }
+
             .btn__pedido {
-                background-color: #E74B2B;
+                background-color: $cor-menu-itens;
                 padding: .6rem .8rem;
                 border-radius: 5px;
                 font-family: $fonte-corpo;
                 font-size: 1.2rem;
+                font-weight: bold;
                 width: 180px;
                 text-align: center;
                 border: 2px solid #fff;
-                color: #fff;
+                color: #000;
                 margin: 0 auto;
+
 
                     &:hover {
                         background-color: #fff;

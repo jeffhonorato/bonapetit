@@ -159,6 +159,10 @@ img {
   }
 }
 
+.promocao {
+  height: 120vh;
+}
+
 .cardapio__titulo {
   background-image: url("../img/cardapio/background-cardapio-titulo.jpg");
   background-position: center;
@@ -297,6 +301,7 @@ img {
   align-items: center;
   gap: 2rem;
   padding: .6rem;
+  perspective: 1000px;
 }
 
 .cardapio__card .card__item {
@@ -305,11 +310,19 @@ img {
   border-radius: 6px;
   box-shadow: 1px 1px 10px 1px #fff;
   max-width: 300px;
+  transform: rotateX(5deg);
 }
 
 .cardapio__card .card__item:hover {
   background-color: rgba(255, 255, 255, 0.1);
   transition: all .6s;
+  transform: rotateY(0deg);
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .cardapio__card .card__item {
+    transform: none;
+  }
 }
 
 .cardapio__card .card__cabecalho {
@@ -333,7 +346,7 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .cardapio__card .sabor {
-    font-size: 1.5rem;
+    font-size: 2.7rem;
   }
 }
 
@@ -374,6 +387,7 @@ img {
   font-family: "Neucha", cursive;
   font-size: 1.2rem;
   text-align: center;
+  background-color: #FF8F33;
 }
 
 .cardapio__card .pequena strong,
@@ -391,15 +405,16 @@ img {
 }
 
 .cardapio__card .btn__pedido {
-  background-color: #E74B2B;
+  background-color: #ff6600;
   padding: .6rem .8rem;
   border-radius: 5px;
   font-family: "Neucha", cursive;
   font-size: 1.2rem;
+  font-weight: bold;
   width: 180px;
   text-align: center;
   border: 2px solid #fff;
-  color: #fff;
+  color: #000;
   margin: 0 auto;
 }
 
