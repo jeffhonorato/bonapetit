@@ -163,6 +163,56 @@ img {
   height: 120vh;
 }
 
+.promocao .promo__box__cabecalho {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.promocao .promo__box__titulo {
+  font-family: "Tangerine", cursive;
+  font-size: 5rem;
+}
+
+.promocao .promo__box__subtitulo {
+  font-family: "Merienda", cursive;
+  font-size: 1.8rem;
+}
+
+.promocao .promo__box__info {
+  margin: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.promocao .promo__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.promocao .promo__btn__menu {
+  background-color: #ff6600;
+  padding: .4rem;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  box-shadow: -20px 10px 10px #000;
+  transform: rotate(-10deg) skewX(25deg) translate(0, 0);
+  text-align: center;
+  padding: 1rem;
+  font-family: "Neucha", cursive;
+  font-size: 2rem;
+}
+
+.promocao .promo__btn__menu:hover {
+  transform: rotate(-5deg) skewX(20deg) translate(0, 0);
+  box-shadow: -20px 10px 10px #ff6600;
+  transition: all 1s;
+}
+
 .cardapio__cabecalho {
   background-image: url("../img/cardapio/background-cardapio-titulo.jpg");
   background-position: center;
