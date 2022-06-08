@@ -254,10 +254,7 @@ img {
 }
 
 .cardapio__container {
-  background-image: url("../img/cardapio/background-cardapio.jpg");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
+  background-color: #000;
   padding-bottom: 3rem;
 }
 
@@ -374,6 +371,7 @@ img {
   border-radius: 6px;
   box-shadow: 1px 1px 10px 1px #fff;
   max-width: 300px;
+  background-color: #333337;
   transform: rotateX(5deg);
 }
 
@@ -529,11 +527,11 @@ img {
 
 .galeria .galeria__titulo {
   margin-bottom: 4rem;
-  font-family: "Merienda", cursive;
-  color: #ff6600;
+  font-family: "Tangerine", cursive;
+  color: #fff;
   text-align: center;
   padding-top: 4rem;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {

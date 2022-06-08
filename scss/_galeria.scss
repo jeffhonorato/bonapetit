@@ -8,11 +8,11 @@
 
     .galeria__titulo {
         margin-bottom: 4rem;
-        font-family: $fonte-subtitulo;
-        color: $cor-menu-itens;
+        font-family: $fonte-titulo;
+        color: #fff;
         text-align: center;
         padding-top: 4rem;
-        font-size: 3rem;
+        font-size: 5rem;
 
             @include celular {
                 font-size: 2rem;

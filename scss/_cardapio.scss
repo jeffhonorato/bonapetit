@@ -25,10 +25,7 @@
     }
 
     .cardapio__container {
-        background-image: url("../img/cardapio/background-cardapio.jpg");
-        background-position: center;
-        background-repeat: repeat;
-        background-size: cover;
+        background-color: #000;
         padding-bottom: 3rem;
 
             .cardapio__sub {
@@ -138,7 +135,7 @@
                 border-radius: 6px;
                 box-shadow: 1px 1px 10px 1px #fff;
                 max-width: 300px;
-                // transform: rotateX(5deg);
+                background-color: #333337;
                 transform: rotateX(5deg);
 
                     &:hover {
