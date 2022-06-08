@@ -160,22 +160,28 @@ img {
 }
 
 .promocao {
+  background-image: url("../img/promocao/background-promo.jpg");
   height: 120vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .promocao .promo__box__cabecalho {
   text-align: center;
-  margin: 2rem 0;
+  padding: 4rem 0;
 }
 
 .promocao .promo__box__titulo {
   font-family: "Tangerine", cursive;
   font-size: 5rem;
+  color: #fff;
 }
 
 .promocao .promo__box__subtitulo {
   font-family: "Merienda", cursive;
   font-size: 1.8rem;
+  color: #fff;
 }
 
 .promocao .promo__box__info {
