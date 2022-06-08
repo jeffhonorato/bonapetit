@@ -384,6 +384,12 @@ img {
   }
 }
 
+@media (min-width: 480px) and (max-width: 768px) {
+  .cardapio__card .card__item {
+    transform: none;
+  }
+}
+
 .cardapio__card .card__cabecalho {
   display: flex;
   align-items: center;

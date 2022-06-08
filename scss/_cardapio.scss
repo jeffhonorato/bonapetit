@@ -100,10 +100,6 @@
                     }
             }
     }
-
-    // .cardapio__cards {
-    //     display: flex;
-    // }
     
     .cardapio__card {
         display: flex;
@@ -147,6 +143,10 @@
                     }
 
                     @include celular {
+                        transform: none;
+                    }
+
+                    @include tablet {
                         transform: none;
                     }
             }
@@ -217,18 +217,6 @@
                     }
             }
 
-            // .pequena {
-            //     background-color: ; 
-            // }
-
-            // .media {
-            //     background-color: #FFB070; 
-            // }
-
-            // .grande {
-            //     background-color: #B85300;
-            // }
-
             .btn__pedido {
                 background-color: $cor-menu-itens;
                 padding: .6rem .8rem;
@@ -250,26 +238,6 @@
                         transition: all .6s;
                     }     
             }
-
-            // .link__cardapio {
-            //     display: flex;
-            //     align-items: center;
-            //     gap: 0.5rem;
-            //     margin: 1rem;
-            //     font-family: $fonte-corpo;
-            //     background-color: $cor-section1;
-            //     max-width: 220px;
-            //     text-align: center;
-            //     border-radius: 10px;
-            //     border: 1px solid $cor-menu-itens;
-            //     color: #fff;
-            //     padding: 0.8rem;
-
-            //         &:hover {
-            //             background-color: $cor-menu-itens;
-            //             border: 1px solid #fff;
-            //             transition: all .6s;
-            //         }
             
 
             .contato__cardapio {   
