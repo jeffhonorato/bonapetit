@@ -193,7 +193,15 @@ img {
   gap: 1rem;
 }
 
-.promocao .promo__btn__menu {
+.promocao .promo__ico__img {
+  width: 50px;
+}
+
+.promocao .promo__btn__bloco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
   background-color: #ff6600;
   padding: .4rem;
   cursor: pointer;
@@ -207,10 +215,10 @@ img {
   font-size: 2rem;
 }
 
-.promocao .promo__btn__menu:hover {
+.promocao .promo__btn__bloco:hover {
   transform: rotate(-5deg) skewX(20deg) translate(0, 0);
   box-shadow: -20px 10px 10px #ff6600;
-  transition: all 1s;
+  transition: all .6s;
 }
 
 .cardapio__cabecalho {
