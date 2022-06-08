@@ -130,16 +130,16 @@
                 border-radius: 6px;
                 max-width: 300px;
                 transform: rotateX(5deg);
-                background: rgba(255, 255, 255, 0.2);
+                background: rgba(255, 255, 255, 0.1);
                 border-radius: 16px;
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                backdrop-filter: blur(5px);       
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(10px);       
                 border: 1px solid rgba(255, 255, 255, 0.3);
 
                     &:hover {
-                        background-color: rgba(255,255,255, .1);
+                        background: rgba(255,255,255, .1);
                         transition: all .6s;
-                        transform: rotateY(0deg);
+                        transform: rotateX(0deg);
                     }
 
                     @include celular {
@@ -218,7 +218,7 @@
             }
 
             .btn__pedido {
-                background-color: $cor-menu-itens;
+                background-color: $cor-btn;
                 padding: .6rem .8rem;
                 border-radius: 5px;
                 font-family: $fonte-corpo;
@@ -226,7 +226,7 @@
                 font-weight: bold;
                 width: 180px;
                 text-align: center;
-                border: 2px solid #fff;
+                border-bottom-left-radius: 20px;
                 color: #000;
                 margin: 0 auto;
 
@@ -234,7 +234,6 @@
                     &:hover {
                         background-color: #fff;
                         color: #000;
-                        border: 2px solid #E74B2B;
                         transition: all .6s;
                     }     
             }
