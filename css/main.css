@@ -161,16 +161,11 @@ img {
 }
 
 .promocao {
-  background-image: url("../img/promocao/background-promo.jpg");
-  height: 120vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #000;
 }
 
 .promocao .promo__box__cabecalho {
   text-align: center;
-  padding: 4rem 0;
 }
 
 .promocao .promo__box__titulo {
@@ -367,12 +362,14 @@ img {
 
 .cardapio__card .card__item {
   padding: 1rem;
-  border: 2px solid #ff6600;
   border-radius: 6px;
-  box-shadow: 1px 1px 10px 1px #fff;
   max-width: 300px;
-  background-color: #333337;
   transform: rotateX(5deg);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .cardapio__card .card__item:hover {
@@ -444,7 +441,6 @@ img {
 .cardapio__card .grande {
   background-color: #ff6600;
   padding: .2rem;
-  border: 1px solid #fff;
   border-radius: 5px;
   font-family: "Neucha", cursive;
   font-size: 1.2rem;
