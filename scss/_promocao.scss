@@ -1,6 +1,5 @@
 .promocao {
     background-color: #000;
-    height: 100vh;
 
 
     .promo__box__cabecalho {
@@ -20,20 +19,12 @@
         color: #fff;
     }
 
-
-    .promo__box__info {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        gap: 2rem;
-
-    }
-
     .promo__btns {
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding-bottom: 8rem;
     }
 
     .promo__ico__img {
@@ -64,8 +55,42 @@
 
     }
 
+    .promo__box__conteudo--pizza {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+    }
+
     .card__promo {
-        border: 1px solid #fff;
+        background-color: rgba(255, 255, 255, .5);
+        width: 800px;
+        padding: .5rem;
+        padding-bottom: 2rem;
+        position: relative;
+
+    }
+
+    .img__promo__item {
+        width: 12.5rem; /* 200px */
+        position: absolute;
+        top: 0;
+        left: -100px;
+    }
+
+    .card__info__titulo {
+        color: $cor-menu-itens;
+        font-family: $fonte-titulo;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .card__info__ingredientes {
+        color: #fff;
+        text-align: end;
+        font-size: 2rem;
     }
 
  
