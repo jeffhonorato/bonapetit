@@ -302,13 +302,19 @@ img {
   }
 }
 
-.promocao .promo__box__conteudo--pizza {
+.promocao .promo__box__conteudo {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   justify-content: center;
   align-items: center;
   padding: .5rem;
+}
+
+.promocao .promo__titulo__item {
+  font-size: 3rem;
+  font-family: "Merienda", cursive;
+  color: #ff6600;
 }
 
 .promocao .card__promo {
@@ -620,13 +626,14 @@ img {
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid #ff6600;
 }
 
 .cardapio__card .card__item:hover {
   background: rgba(255, 255, 255, 0.2);
   transition: all .6s;
   transform: rotateX(0deg);
+  border: 1px solid #fff;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {

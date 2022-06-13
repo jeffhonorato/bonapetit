@@ -131,13 +131,19 @@
 
    
 
-    .promo__box__conteudo--pizza {
+    .promo__box__conteudo {
         display: flex;
         flex-direction: column;
         gap: 3rem;
         justify-content: center;
         align-items: center;
         padding: .5rem;
+    }
+
+    .promo__titulo__item {
+        font-size: 3rem;
+        font-family: $fonte-subtitulo;
+        color: $cor-menu-itens;
     }
 
     .card__promo {
