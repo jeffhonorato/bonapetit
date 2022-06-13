@@ -88,14 +88,14 @@
 
         
         @include celular {
-            padding: .2rem;
+            padding: .3rem;
             transform: none;
             box-shadow: -2px 2px 2px #fff;
             
         }
 
         @include tablet {
-            padding: .2rem;
+            padding: .4rem;
             transform: none;
             box-shadow: -2px 2px 2px #fff;
             
@@ -121,11 +121,11 @@
 
 
         @include celular {
-            font-size: .6rem;
+            font-size: .8rem;
         }
 
         @include tablet {
-            font-size: .8rem;
+            font-size: 1rem;
         }
     }
 
@@ -274,7 +274,7 @@
     .card__info__pedido {
         font-family: $fonte-corpo;
         color: #fff;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
  
