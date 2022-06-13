@@ -228,23 +228,28 @@
             }
 
             .btn__pedido {
-                background-color: $cor-btn;
                 padding: .6rem .8rem;
                 border-radius: 5px;
                 font-family: $fonte-corpo;
                 font-size: 1.2rem;
-                font-weight: bold;
                 width: 180px;
                 text-align: center;
                 border-bottom-left-radius: 20px;
-                color: #000;
+                color: #fff;
                 margin: 0 auto;
+
+                background: rgba(255, 102, 0, 0.8);
+                border-radius: 1rem;
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 1px solid #fff;
 
 
                     &:hover {
                         background-color: #fff;
                         color: #000;
-                        transition: all .6s;
+                        transition: all .4s;
+                        border: 1px solid #fff;
                     }     
             }
             
