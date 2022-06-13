@@ -166,6 +166,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding: 3rem 0rem;
 }
 
 .promocao .promo__box__cabecalho {
@@ -181,7 +182,13 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .promocao .promo__box__titulo {
-    font-size: 2.4rem;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .promocao .promo__box__titulo {
+    font-size: 4rem;
   }
 }
 
@@ -197,6 +204,12 @@ img {
   }
 }
 
+@media (min-width: 480px) and (max-width: 768px) {
+  .promocao .promo__box__subtitulo {
+    font-size: 1.4rem;
+  }
+}
+
 .promocao .promo__btns {
   display: flex;
   justify-content: center;
@@ -206,6 +219,13 @@ img {
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
+  .promocao .promo__btns {
+    padding-bottom: 4rem;
+    gap: .5rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
   .promocao .promo__btns {
     padding-bottom: 4rem;
     gap: .5rem;
@@ -242,6 +262,14 @@ img {
   }
 }
 
+@media (min-width: 480px) and (max-width: 768px) {
+  .promocao .promo__btn__bloco {
+    padding: .2rem;
+    transform: none;
+    box-shadow: -2px 2px 2px #fff;
+  }
+}
+
 .promocao .promo__ico__img {
   width: 40px;
 }
@@ -252,6 +280,12 @@ img {
   }
 }
 
+@media (min-width: 480px) and (max-width: 768px) {
+  .promocao .promo__ico__img {
+    width: 30px;
+  }
+}
+
 .promocao .promo__btn__menu {
   font-family: "Merienda", cursive;
 }
@@ -259,6 +293,12 @@ img {
 @media (min-width: 0px) and (max-width: 480px) {
   .promocao .promo__btn__menu {
     font-size: .6rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .promocao .promo__btn__menu {
+    font-size: .8rem;
   }
 }
 
@@ -294,6 +334,14 @@ img {
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
+  .promocao .card__promo {
+    width: 20rem;
+    flex-wrap: wrap;
+    margin: 0rem .3rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
   .promocao .card__promo {
     width: 20rem;
     flex-wrap: wrap;
@@ -437,6 +485,12 @@ img {
 @media (min-width: 0px) and (max-width: 480px) {
   .cardapio__cabecalho .titulo__principal {
     font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .cardapio__cabecalho .titulo__principal {
+    font-size: 6rem;
   }
 }
 

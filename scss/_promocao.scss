@@ -9,6 +9,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding: 3rem 0rem;
     
 
 
@@ -24,7 +25,11 @@
         color: $cor-menu-itens;
 
             @include celular {
-                font-size: 2.4rem;
+                font-size: 3rem;
+            }
+
+            @include tablet {
+                font-size: 4rem;
             }
     }
 
@@ -36,6 +41,10 @@
         @include celular {
             font-size: 1rem;
         }
+
+        @include tablet {
+            font-size: 1.4rem;
+        }
     }
 
     .promo__btns {
@@ -46,6 +55,11 @@
         padding-bottom: 8rem;
 
             @include celular {
+                padding-bottom: 4rem;
+                gap: .5rem;
+            }
+
+            @include tablet {
                 padding-bottom: 4rem;
                 gap: .5rem;
             }
@@ -80,6 +94,13 @@
             
         }
 
+        @include tablet {
+            padding: .2rem;
+            transform: none;
+            box-shadow: -2px 2px 2px #fff;
+            
+        }
+
 
     }
 
@@ -89,6 +110,10 @@
         @include celular {
             width: 25px;
         }
+
+        @include tablet {
+            width: 30px;
+        }
     }
 
     .promo__btn__menu {
@@ -97,6 +122,10 @@
 
         @include celular {
             font-size: .6rem;
+        }
+
+        @include tablet {
+            font-size: .8rem;
         }
     }
 
@@ -133,6 +162,12 @@
             }
 
             @include celular {
+                width: 20rem;
+                flex-wrap: wrap;
+                margin: 0rem .3rem;
+            }
+
+            @include tablet {
                 width: 20rem;
                 flex-wrap: wrap;
                 margin: 0rem .3rem;
