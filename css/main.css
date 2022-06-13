@@ -315,6 +315,7 @@ img {
   font-size: 3rem;
   font-family: "Merienda", cursive;
   color: #ff6600;
+  text-align: center;
 }
 
 .promocao .card__promo {
@@ -379,7 +380,7 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .promocao .card__info__titulo {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -406,7 +407,7 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .promocao .card__info__tam {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -420,7 +421,7 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .promocao .card__info__preco {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 

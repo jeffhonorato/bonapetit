@@ -144,6 +144,7 @@
         font-size: 3rem;
         font-family: $fonte-subtitulo;
         color: $cor-menu-itens;
+        text-align: center;
     }
 
     .card__promo {
@@ -201,7 +202,7 @@
         margin-bottom: 1.2rem;
 
             @include celular {
-                font-size: 2.4rem;
+                font-size: 2.8rem;
             }
     }
 
@@ -224,7 +225,7 @@
         text-align: center;
 
         @include celular {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
     }
 
@@ -236,7 +237,7 @@
         margin-bottom: 1rem;
 
         @include celular {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
     }
 
