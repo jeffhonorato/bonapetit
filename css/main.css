@@ -223,6 +223,10 @@ img {
   transition: all .6s;
 }
 
+.promocao .card__promo {
+  border: 1px solid #fff;
+}
+
 .cardapio__cabecalho {
   background-image: url("../img/cardapio/background-cardapio-titulo.jpg");
   background-position: center;
