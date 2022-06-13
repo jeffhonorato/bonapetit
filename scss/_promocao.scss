@@ -1,15 +1,16 @@
 .promocao {
 
     background: linear-gradient(
-    rgba(0,0,0,0.7),
-    rgba(0,0,0,0.7)),
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
 
     url("../img/promocao/background-promo.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-     
+    background-attachment: fixed;
     
+
 
 
     .promo__box__cabecalho {
