@@ -193,10 +193,6 @@ img {
   padding-bottom: 8rem;
 }
 
-.promocao .promo__ico__img {
-  width: 40px;
-}
-
 .promocao .promo__btn__bloco {
   display: flex;
   align-items: center;
@@ -218,6 +214,14 @@ img {
   transform: rotate(-5deg) skewX(20deg) translate(0, 0);
   box-shadow: -20px 10px 10px #ff6600;
   transition: all .6s;
+}
+
+.promocao .promo__ico__img {
+  width: 40px;
+}
+
+.promocao .promo__btn__menu {
+  font-family: "Merienda", cursive;
 }
 
 .promocao .promo__box__conteudo--pizza {

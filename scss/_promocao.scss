@@ -38,10 +38,6 @@
         padding-bottom: 8rem;
     }
 
-    .promo__ico__img {
-        width: 40px;
-    }
-
     .promo__btn__bloco {
         display: flex;
         align-items: center;
@@ -65,6 +61,16 @@
         }
 
     }
+
+    .promo__ico__img {
+        width: 40px;
+    }
+
+    .promo__btn__menu {
+        font-family: $fonte-subtitulo;
+    }
+
+   
 
     .promo__box__conteudo--pizza {
         display: flex;
