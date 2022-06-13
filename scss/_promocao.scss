@@ -22,12 +22,20 @@
         font-family: $fonte-titulo;
         font-size: 5rem;
         color: $cor-menu-itens;
+
+            @include celular {
+                font-size: 2.4rem;
+            }
     }
 
     .promo__box__subtitulo {
         font-family: $fonte-subtitulo;
         font-size: 1.8rem;
         color: #fff;
+
+        @include celular {
+            font-size: 1rem;
+        }
     }
 
     .promo__btns {
@@ -39,7 +47,7 @@
 
             @include celular {
                 padding-bottom: 4rem;
-                gap: .2rem;
+                gap: .5rem;
             }
     }
 
@@ -68,7 +76,8 @@
         @include celular {
             padding: .2rem;
             transform: none;
-            box-shadow: -5px 5px 5px #fff;
+            box-shadow: -2px 2px 2px #fff;
+            
         }
 
 
@@ -78,7 +87,7 @@
         width: 40px;
 
         @include celular {
-            width: 30px;
+            width: 25px;
         }
     }
 
@@ -87,7 +96,7 @@
 
 
         @include celular {
-            font-size: 1rem;
+            font-size: .6rem;
         }
     }
 
@@ -135,6 +144,12 @@
         height: auto;
         border-radius: 1rem;
         box-shadow: 0 5px 10px $cor-menu-itens;
+
+            @include celular {
+                width: 300px;
+                height: auto;
+            }
+
     }
 
     .card__info__titulo {
@@ -143,6 +158,10 @@
         text-align: center;
         font-size: 3.4rem;
         margin-bottom: 1.2rem;
+
+            @include celular {
+                font-size: 2.4rem;
+            }
     }
 
     .card__info__ingredientes {
@@ -151,6 +170,10 @@
         font-family: $fonte-corpo;
         text-align: center;
         margin-bottom: 1.2rem;
+
+            @include celular {
+                font-size: 1rem;
+            }
     }
 
     .card__info__tam {
@@ -158,6 +181,10 @@
         font-size: 2.2rem;
         font-family: $fonte-corpo;
         text-align: center;
+
+        @include celular {
+            font-size: 1.5rem;
+        }
     }
 
     .card__info__preco {
@@ -166,6 +193,10 @@
         font-family: $fonte-corpo;
         text-align: center;
         margin-bottom: 1rem;
+
+        @include celular {
+            font-size: 1.5rem;
+        }
     }
 
     .card__info__btn {
@@ -199,6 +230,10 @@
 
     .card__info__icone {
         width: 50px;
+
+        @include celular {
+            width: 30px;
+        }
     }
 
     .card__info__pedido {
