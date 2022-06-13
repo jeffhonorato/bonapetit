@@ -21,7 +21,7 @@
     .promo__box__titulo {
         font-family: $fonte-titulo;
         font-size: 5rem;
-        color: #fff;
+        color: $cor-menu-itens;
     }
 
     .promo__box__subtitulo {
@@ -91,28 +91,46 @@
         padding-bottom: 2rem;
         
         background: rgba(255, 255, 255, .1);
-        border-radius: 16px;
+        border-radius: 1rem;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        border: 1px solid $cor-menu-itens;
     }
 
     .img__promo__item {
         width: 400px;
         height: auto;
+        border-radius: 1rem;
+        box-shadow: 0 10px 10px $cor-menu-itens;
     }
 
     .card__info__titulo {
         color: $cor-menu-itens;
         font-family: $fonte-titulo;
         text-align: center;
-        font-size: 3rem;
+        font-size: 3.4rem;
+        margin-bottom: 1rem;
     }
 
     .card__info__ingredientes {
         color: #fff;
         font-size: 1.2rem;
+        font-family: $fonte-corpo;
+    }
+
+    .card__info__tam {
+        color: $cor-menu-itens;
+        font-size: 2.2rem;
+        font-family: $fonte-corpo;
+        text-align: center;
+    }
+
+    .card__info__preco {
+        color: #fff;
+        font-size: 2.6rem;
+        font-family: $fonte-corpo;
+        text-align: center;
     }
 
  
