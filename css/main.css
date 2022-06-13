@@ -161,7 +161,10 @@ img {
 }
 
 .promocao {
-  background-color: #000;
+  background-image: url("../img/promocao/background-promo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .promocao .promo__box__cabecalho {
@@ -226,7 +229,6 @@ img {
 }
 
 .promocao .card__promo {
-  background-color: rgba(255, 255, 255, 0.5);
   width: 800px;
   padding: .5rem;
   padding-bottom: 2rem;
@@ -234,11 +236,8 @@ img {
 }
 
 .promocao .img__promo__item {
-  width: 12.5rem;
-  /* 200px */
-  position: absolute;
-  top: 0;
-  left: -100px;
+  width: 400px;
+  height: auto;
 }
 
 .promocao .card__info__titulo {
