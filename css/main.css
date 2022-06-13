@@ -292,7 +292,12 @@ img {
 }
 
 .cardapio__container {
-  background-color: #000;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/cardapio/background-cardapio.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding-bottom: 3rem;
 }
 
@@ -407,7 +412,7 @@ img {
   padding: 1rem;
   border-radius: 6px;
   max-width: 300px;
-  transform: rotateX(5deg);
+  transform: rotateX(3deg);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
@@ -416,7 +421,7 @@ img {
 }
 
 .cardapio__card .card__item:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   transition: all .6s;
   transform: rotateX(0deg);
 }
