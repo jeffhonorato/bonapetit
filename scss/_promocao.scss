@@ -274,7 +274,7 @@
     }
 
     .card__info__icone {
-        width: 50px;
+        width: 40px;
 
         @include celular {
             width: 30px;
@@ -284,7 +284,7 @@
     .card__info__pedido {
         font-family: $fonte-corpo;
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
 
