@@ -5,9 +5,9 @@ var swiper = new Swiper(".pizza-swiper", {
     slidesPerView: "auto",
     loop: true,
     coverflowEffect: {
-      rotate: 40,
+      rotate: 20,
       stretch: 0,
-      depth: 100,
+      depth: 60,
       modifier: 3,
       slideShadows: false,
     },
