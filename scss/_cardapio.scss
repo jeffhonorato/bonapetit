@@ -146,7 +146,7 @@
                 background: rgba(255, 255, 255, .1);
                 border-radius: 16px;
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-                backdrop-filter: blur(10px);       
+                // backdrop-filter: blur(10px);       
                 border: 1px solid $cor-menu-itens;
 
                     &:hover {
@@ -305,6 +305,19 @@
       .swiper-slide img {
         display: block;
         width: 100%;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev  {
+        color: $cor-menu-itens;
+      }
+
+      .swiper-button-next:after {
+        font-size: 30px;
+      }
+
+      .swiper-button-prev:after {
+        font-size: 30px;
       }
 
 

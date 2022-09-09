@@ -641,7 +641,6 @@ img {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
   border: 1px solid #ff6600;
 }
 
@@ -811,6 +810,19 @@ img {
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff6600;
+}
+
+.swiper-button-next:after {
+  font-size: 30px;
+}
+
+.swiper-button-prev:after {
+  font-size: 30px;
 }
 
 .galeria {
