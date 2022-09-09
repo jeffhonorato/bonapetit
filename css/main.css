@@ -625,7 +625,6 @@ img {
 
 .cardapio__card .cardapio__flex {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -804,8 +803,8 @@ img {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 320px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
 }
 
 .swiper-button-next,
