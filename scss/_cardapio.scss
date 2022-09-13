@@ -203,7 +203,7 @@
                 display: flex;
                 gap: .5rem;
                 justify-content: center;
-                margin-bottom: 1.4rem;
+                margin: 1.4rem 0;
 
                     @include celular {
                         gap: .5rem; 

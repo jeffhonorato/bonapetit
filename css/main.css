@@ -482,7 +482,7 @@ img {
     display: flex;
     gap: .5rem;
     justify-content: center;
-    margin-bottom: 1.4rem; }
+    margin: 1.4rem 0; }
     @media (min-width: 0px) and (max-width: 480px) {
       .cardapio__card .precos {
         gap: .5rem; } }
