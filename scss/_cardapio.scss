@@ -211,7 +211,7 @@
                 }
             }
 
-            .preco__pizza {
+            .preco__item {
                 margin: 1rem 0;
             }
 
@@ -249,7 +249,9 @@
                 font-family: $fonte-corpo;
                 color: #fff;
                 text-align: center;
+                padding: .4rem;
                 margin-bottom: 1.2rem;
+               
             }
 
             .btn__pedido {

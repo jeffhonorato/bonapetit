@@ -484,7 +484,7 @@ img {
     @media (min-width: 0px) and (max-width: 480px) {
       .cardapio__card .ingredientes {
         font-size: 1.2rem; } }
-  .cardapio__card .preco__pizza {
+  .cardapio__card .preco__item {
     margin: 1rem 0; }
   .cardapio__card .precos {
     display: flex;
@@ -516,6 +516,7 @@ img {
     font-family: "Neucha", cursive;
     color: #fff;
     text-align: center;
+    padding: .4rem;
     margin-bottom: 1.2rem; }
   .cardapio__card .btn__pedido {
     padding: .6rem .8rem;
