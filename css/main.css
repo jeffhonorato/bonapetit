@@ -447,6 +447,12 @@ img {
       transition: all .6s;
       transform: rotateX(0deg);
       border: 1px solid #fff; }
+    .cardapio__card .card__item:hover .pequena {
+      background-color: #fff; }
+    .cardapio__card .card__item:hover .media {
+      background-color: #fff; }
+    .cardapio__card .card__item:hover .grande {
+      background-color: #fff; }
     @media (min-width: 0px) and (max-width: 480px) {
       .cardapio__card .card__item {
         transform: none; } }
@@ -478,11 +484,12 @@ img {
     @media (min-width: 0px) and (max-width: 480px) {
       .cardapio__card .ingredientes {
         font-size: 1.2rem; } }
+  .cardapio__card .preco__pizza {
+    margin: 1rem 0; }
   .cardapio__card .precos {
     display: flex;
     gap: .5rem;
-    justify-content: center;
-    margin: 1.4rem 0; }
+    justify-content: center; }
     @media (min-width: 0px) and (max-width: 480px) {
       .cardapio__card .precos {
         gap: .5rem; } }
@@ -505,6 +512,11 @@ img {
       .cardapio__card .media,
       .cardapio__card .grande {
         font-size: 1rem; } }
+  .cardapio__card .bordas {
+    font-family: "Neucha", cursive;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.2rem; }
   .cardapio__card .btn__pedido {
     padding: .6rem .8rem;
     border-radius: 5px;

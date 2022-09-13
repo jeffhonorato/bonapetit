@@ -155,6 +155,18 @@
                         border: 1px solid #fff;
                     }
 
+                    &:hover .pequena {
+                        background-color: #fff;
+                    }
+
+                    &:hover .media {
+                        background-color: #fff;
+                    }
+
+                    &:hover .grande {
+                        background-color: #fff;
+                    }
+
                     @include celular {
                         transform: none;
                     }
@@ -199,11 +211,14 @@
                 }
             }
 
+            .preco__pizza {
+                margin: 1rem 0;
+            }
+
             .precos {
                 display: flex;
                 gap: .5rem;
                 justify-content: center;
-                margin: 1.4rem 0;
 
                     @include celular {
                         gap: .5rem; 
@@ -228,6 +243,13 @@
                     @include celular {
                         font-size: 1rem;
                     }
+            }
+
+            .bordas {
+                font-family: $fonte-corpo;
+                color: #fff;
+                text-align: center;
+                margin-bottom: 1.2rem;
             }
 
             .btn__pedido {
