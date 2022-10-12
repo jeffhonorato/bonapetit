@@ -4,21 +4,26 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 ul, li {
-  list-style: none; }
+  list-style: none;
+}
 
 a {
   display: block;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 img {
   max-width: 100%;
-  display: block; }
+  display: block;
+}
 
 /********** MIXINS **********/
 /********** MONTAGEM DO SITE **********/
@@ -27,92 +32,133 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh; }
+  height: 80vh;
+}
+
+.header .logo {
+  width: 25rem;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .header .logo {
-    width: 25rem;
-    margin: 0 auto;
-    padding-top: 4rem; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .header .logo {
-        width: 15rem; } }
-  @media (min-width: 0px) and (max-width: 480px) {
-    .header .nav {
-      position: fixed;
-      top: 215px;
-      left: 0;
-      display: block;
-      z-index: 1000; } }
+    width: 15rem;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .header .nav {
+    position: fixed;
+    top: 215px;
+    left: 0;
+    display: block;
+    z-index: 1000;
+  }
+}
+
+.header .menu__mobile {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  display: block;
+  width: 60px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .header .menu__mobile {
     position: fixed;
     top: 10px;
     left: 0;
     display: block;
-    width: 60px;
+    z-index: 2000;
     cursor: pointer;
-    z-index: 10000; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .header .menu__mobile {
-        position: fixed;
-        top: 10px;
-        left: 0;
-        display: block;
-        z-index: 2000;
-        cursor: pointer; } }
+  }
+}
+
+.header .nav__itens {
+  position: fixed;
+  top: 80px;
+  left: 4px;
+  display: none;
+  z-index: 10000;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .header .nav__itens {
     position: fixed;
     top: 80px;
     left: 4px;
     display: none;
-    z-index: 10000; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .header .nav__itens {
-        position: fixed;
-        top: 80px;
-        left: 4px;
-        display: none;
-        z-index: 100; } }
-  .header .nav__itens.ativo {
-    display: block;
-    animation: showTop .6s forwards; }
+    z-index: 100;
+  }
+}
+
+.header .nav__itens.ativo {
+  display: block;
+  animation: showTop .6s forwards;
+}
+
+.header .nav__link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+  background-color: #ff6600;
+  padding: .5rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 4px 1px 5px #fff;
+  margin-bottom: 4px;
+}
+
+.header .nav__link:hover {
+  box-shadow: 0px 0px 1px 1px #fff;
+  background-color: #ebac5a;
+  transition: all .6s;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .header .nav__link {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .3rem;
-    background-color: #ff6600;
-    padding: .5rem;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    align-items: center;
-    box-shadow: 4px 1px 5px #fff;
-    margin-bottom: 4px; }
-    .header .nav__link:hover {
-      box-shadow: 0px 0px 1px 1px #fff;
-      background-color: #ebac5a;
-      transition: all .6s; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .header .nav__link {
-        padding: .4rem .3rem; } }
+    padding: .4rem .3rem;
+  }
+}
+
+.header .nav__icone {
+  font-size: 1rem;
+  color: #000;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .header .nav__icone {
     font-size: 1rem;
-    color: #000; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .header .nav__icone {
-        font-size: 1rem; } }
+  }
+}
+
+.header .nav__item {
+  font-family: "Merienda", cursive;
+  font-size: 1rem;
+  color: #000;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .header .nav__item {
-    font-family: "Merienda", cursive;
-    font-size: 1rem;
-    color: #000; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .header .nav__item {
-        font-size: .8rem; } }
+    font-size: .8rem;
+  }
+}
 
 @keyframes showTop {
   from {
     opacity: 0;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+  }
   to {
     opacity: 1;
-    margin-bottom: 0px; } }
+    margin-bottom: 0px;
+  }
+}
 
 .promocao {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/promocao/background-promo.jpg");
@@ -120,236 +166,355 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 3rem 0rem; }
-  .promocao .promo__box__cabecalho {
-    text-align: center;
-    padding: 4rem 0; }
+  padding: 3rem 0rem;
+}
+
+.promocao .promo__box__cabecalho {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.promocao .promo__box__titulo {
+  font-family: "Tangerine", cursive;
+  font-size: 5rem;
+  color: #ff6600;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .promocao .promo__box__titulo {
-    font-family: "Tangerine", cursive;
-    font-size: 5rem;
-    color: #ff6600; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .promocao .promo__box__titulo {
-        font-size: 3rem; } }
-    @media (min-width: 480px) and (max-width: 768px) {
-      .promocao .promo__box__titulo {
-        font-size: 4rem; } }
-  .promocao .promo__box__subtitulo {
-    font-family: "Merienda", cursive;
-    font-size: 1.8rem;
-    color: #fff; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .promocao .promo__box__subtitulo {
-        font-size: 1rem; } }
-    @media (min-width: 480px) and (max-width: 768px) {
-      .promocao .promo__box__subtitulo {
-        font-size: 1.4rem; } }
-  .promocao .promo__btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding-bottom: 8rem; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .promocao .promo__btns {
-        padding-bottom: 4rem;
-        gap: .5rem; } }
-    @media (min-width: 480px) and (max-width: 768px) {
-      .promocao .promo__btns {
-        padding-bottom: 4rem;
-        gap: .5rem; } }
-  .promocao .promo__btn__bloco {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .4rem;
-    background-color: #ff6600;
-    padding: .4rem;
-    cursor: pointer;
-    border-bottom-left-radius: 20px;
-    box-shadow: -0px 10px 10px #fff;
-    transform: rotate(-5deg) skewX(15deg) translate(0, 0);
-    text-align: center;
-    padding: .5rem;
-    font-family: "Neucha", cursive; }
-    .promocao .promo__btn__bloco:hover {
-      transform: rotate(-5deg) skewX(20deg) translate(0, 0);
-      box-shadow: -10px 10px 10px #ff6600;
-      transition: all .4s; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .promocao .promo__btn__bloco {
-        padding: .3rem;
-        transform: none;
-        box-shadow: -2px 2px 2px #fff; } }
-    @media (min-width: 480px) and (max-width: 768px) {
-      .promocao .promo__btn__bloco {
-        padding: .4rem;
-        transform: none;
-        box-shadow: -2px 2px 2px #fff; } }
-  .promocao .promo__ico__img {
-    width: 40px; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .promocao .promo__ico__img {
-        width: 25px; } }
-    @media (min-width: 480px) and (max-width: 768px) {
-      .promocao .promo__ico__img {
-        width: 30px; } }
-  .promocao .promo__btn__menu {
-    font-family: "Merienda", cursive; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .promocao .promo__btn__menu {
-        font-size: .8rem; } }
-    @media (min-width: 480px) and (max-width: 768px) {
-      .promocao .promo__btn__menu {
-        font-size: 1rem; } }
-  .promocao .promo__box__conteudo {
-    display: none;
-    flex-direction: column;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-    padding: .5rem;
-    animation: show 1s forwards; }
-  .promocao .promo__box__conteudo.show {
-    display: flex; }
-  .promocao .promo__titulo__item {
     font-size: 3rem;
-    font-family: "Merienda", cursive;
-    color: #ff6600;
-    text-align: center; }
-  .promocao .card__promo {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1rem;
-    width: 52.5rem;
-    /* 840px */
-    padding: .5rem;
-    padding-bottom: 2rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 1rem;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid #ff6600; }
-    .promocao .card__promo:hover {
-      transition: all .4s;
-      border: 1px solid #fff; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .promocao .card__promo {
-        width: 20rem;
-        flex-wrap: wrap;
-        margin: 0rem .3rem; } }
-    @media (min-width: 480px) and (max-width: 768px) {
-      .promocao .card__promo {
-        width: 20rem;
-        flex-wrap: wrap;
-        margin: 0rem .3rem; } }
-  .promocao .img__promo__item {
-    width: 400px;
-    border-radius: 1rem;
-    box-shadow: 0 5px 10px #ff6600; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .promocao .img__promo__item {
-        width: 300px;
-        height: auto; } }
-  .promocao .card__info__titulo {
-    color: #ff6600;
-    font-family: "Tangerine", cursive;
-    text-align: center;
-    font-size: 3.4rem;
-    margin-bottom: 1.2rem; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .promocao .card__info__titulo {
-        font-size: 2.8rem; } }
-  .promocao .card__info__ingredientes {
-    color: #fff;
-    font-size: 1.2rem;
-    font-family: "Neucha", cursive;
-    text-align: center;
-    margin-bottom: 1.2rem; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .promocao .card__info__ingredientes {
-        font-size: 1rem; } }
-  .promocao .card__info__tam {
-    color: #ff6600;
-    font-size: 2.2rem;
-    font-family: "Neucha", cursive;
-    text-align: center; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .promocao .card__info__tam {
-        font-size: 1.8rem; } }
-  .promocao .card__info__preco {
-    color: #fff;
-    font-size: 2.6rem;
-    font-family: "Neucha", cursive;
-    text-align: center;
-    margin-bottom: 1rem; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .promocao .card__info__preco {
-        font-size: 2rem; } }
-  .promocao .card__info__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .3rem;
-    width: 11rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .promocao .promo__box__titulo {
+    font-size: 4rem;
+  }
+}
+
+.promocao .promo__box__subtitulo {
+  font-family: "Merienda", cursive;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .promocao .promo__box__subtitulo {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .promocao .promo__box__subtitulo {
+    font-size: 1.4rem;
+  }
+}
+
+.promocao .promo__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 8rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .promocao .promo__btns {
+    padding-bottom: 4rem;
+    gap: .5rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .promocao .promo__btns {
+    padding-bottom: 4rem;
+    gap: .5rem;
+  }
+}
+
+.promocao .promo__btn__bloco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  background-color: #ff6600;
+  padding: .4rem;
+  cursor: pointer;
+  border-bottom-left-radius: 20px;
+  box-shadow: -0px 10px 10px #fff;
+  transform: rotate(-5deg) skewX(15deg) translate(0, 0);
+  text-align: center;
+  padding: .5rem;
+  font-family: "Neucha", cursive;
+}
+
+.promocao .promo__btn__bloco:hover {
+  transform: rotate(-5deg) skewX(20deg) translate(0, 0);
+  box-shadow: -10px 10px 10px #ff6600;
+  transition: all .4s;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .promocao .promo__btn__bloco {
     padding: .3rem;
-    background: rgba(255, 102, 0, 0.58);
-    border-radius: 16px;
-    box-shadow: 0 2px 6px #fff;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid #fff;
-    text-align: center;
-    margin: 0 auto;
-    cursor: pointer; }
-    .promocao .card__info__btn:hover {
-      box-shadow: 0 2px 6px #ff6600;
-      background: #fff;
-      transition: all .5s;
-      color: #000; }
-    .promocao .card__info__btn:hover .card__info__pedido {
-      color: #000; }
+    transform: none;
+    box-shadow: -2px 2px 2px #fff;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .promocao .promo__btn__bloco {
+    padding: .4rem;
+    transform: none;
+    box-shadow: -2px 2px 2px #fff;
+  }
+}
+
+.promocao .promo__ico__img {
+  width: 40px;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .promocao .promo__ico__img {
+    width: 25px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .promocao .promo__ico__img {
+    width: 30px;
+  }
+}
+
+.promocao .promo__btn__menu {
+  font-family: "Merienda", cursive;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .promocao .promo__btn__menu {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .promocao .promo__btn__menu {
+    font-size: 1rem;
+  }
+}
+
+.promocao .promo__box__conteudo {
+  display: none;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  animation: show 1s forwards;
+}
+
+.promocao .promo__box__conteudo.show {
+  display: flex;
+}
+
+.promocao .promo__titulo__item {
+  font-size: 3rem;
+  font-family: "Merienda", cursive;
+  color: #ff6600;
+  text-align: center;
+}
+
+.promocao .card__promo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  width: 52.5rem;
+  /* 840px */
+  padding: .5rem;
+  padding-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #ff6600;
+}
+
+.promocao .card__promo:hover {
+  transition: all .4s;
+  border: 1px solid #fff;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .promocao .card__promo {
+    width: 20rem;
+    flex-wrap: wrap;
+    margin: 0rem .3rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .promocao .card__promo {
+    width: 20rem;
+    flex-wrap: wrap;
+    margin: 0rem .3rem;
+  }
+}
+
+.promocao .img__promo__item {
+  width: 400px;
+  border-radius: 1rem;
+  box-shadow: 0 5px 10px #ff6600;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .promocao .img__promo__item {
+    width: 300px;
+    height: auto;
+  }
+}
+
+.promocao .card__info__titulo {
+  color: #ff6600;
+  font-family: "Tangerine", cursive;
+  text-align: center;
+  font-size: 3.4rem;
+  margin-bottom: 1.2rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .promocao .card__info__titulo {
+    font-size: 2.8rem;
+  }
+}
+
+.promocao .card__info__ingredientes {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Neucha", cursive;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .promocao .card__info__ingredientes {
+    font-size: 1rem;
+  }
+}
+
+.promocao .card__info__tam {
+  color: #ff6600;
+  font-size: 2.2rem;
+  font-family: "Neucha", cursive;
+  text-align: center;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .promocao .card__info__tam {
+    font-size: 1.8rem;
+  }
+}
+
+.promocao .card__info__preco {
+  color: #fff;
+  font-size: 2.6rem;
+  font-family: "Neucha", cursive;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .promocao .card__info__preco {
+    font-size: 2rem;
+  }
+}
+
+.promocao .card__info__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .3rem;
+  width: 11rem;
+  padding: .3rem;
+  background: rgba(255, 102, 0, 0.58);
+  border-radius: 16px;
+  box-shadow: 0 2px 6px #fff;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #fff;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.promocao .card__info__btn:hover {
+  box-shadow: 0 2px 6px #ff6600;
+  background: #fff;
+  transition: all .5s;
+  color: #000;
+}
+
+.promocao .card__info__btn:hover .card__info__pedido {
+  color: #000;
+}
+
+.promocao .card__info__icone {
+  width: 40px;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .promocao .card__info__icone {
-    width: 40px; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .promocao .card__info__icone {
-        width: 30px; } }
-  .promocao .card__info__pedido {
-    font-family: "Neucha", cursive;
-    color: #fff;
-    font-size: 1.2rem; }
+    width: 30px;
+  }
+}
+
+.promocao .card__info__pedido {
+  font-family: "Neucha", cursive;
+  color: #fff;
+  font-size: 1.2rem;
+}
 
 @keyframes show {
   from {
     opacity: 0;
-    transform: translate3d(-30px, 0, 0); }
+    transform: translate3d(-30px, 0, 0);
+  }
   to {
     opacity: 1;
-    transform: translate3d(0, 0, 0); } }
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 .cardapio__cabecalho {
   background-image: url("../img/cardapio/background-cardapio-titulo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+}
+
+.cardapio__cabecalho .titulo__principal {
+  font-family: "Tangerine", cursive;
+  color: #fff;
+  font-size: 9rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .cardapio__cabecalho .titulo__principal {
-    font-family: "Tangerine", cursive;
-    color: #fff;
-    font-size: 9rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .cardapio__cabecalho .titulo__principal {
-        font-size: 3.5rem; } }
-    @media (min-width: 480px) and (max-width: 768px) {
-      .cardapio__cabecalho .titulo__principal {
-        font-size: 6rem; } }
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .cardapio__cabecalho .titulo__principal {
+    font-size: 6rem;
+  }
+}
 
 .cardapio__container {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/cardapio/background-cardapio.jpg");
@@ -358,268 +523,385 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+}
+
+.cardapio__container .cardapio__sub {
+  font-family: "Merienda", cursive;
+  color: #ff6600;
+  text-align: center;
+  padding: 4rem 0;
+  font-size: 3rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .cardapio__container .cardapio__sub {
-    font-family: "Merienda", cursive;
-    color: #ff6600;
-    text-align: center;
-    padding: 4rem 0;
-    font-size: 3rem; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .cardapio__container .cardapio__sub {
-        font-size: 1.5rem; } }
+    font-size: 1.5rem;
+  }
+}
+
+.cardapio__container .cardapio__botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .cardapio__container .cardapio__botoes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    margin-bottom: 5rem; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .cardapio__container .cardapio__botoes {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 100vw;
-        padding: .4rem;
-        gap: .5rem; } }
-  .cardapio__container .cardapio__btn {
-    display: flex;
-    align-items: center;
-    gap: .2rem;
-    background-color: #ff6600;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
     padding: .4rem;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 1px 1px 0px 2px #fff; }
-    .cardapio__container .cardapio__btn:hover {
-      box-shadow: 0px 0px 10px 0px #ff6600;
-      transition: all .6s;
-      background-color: #fff; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .cardapio__container .cardapio__btn {
-        gap: .3rem;
-        padding: .2rem 1rem; } }
+    gap: .5rem;
+  }
+}
+
+.cardapio__container .cardapio__btn {
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+  background-color: #ff6600;
+  padding: .4rem;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0px 2px #fff;
+}
+
+.cardapio__container .cardapio__btn:hover {
+  box-shadow: 0px 0px 10px 0px #ff6600;
+  transition: all .6s;
+  background-color: #fff;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .cardapio__container .cardapio__btn {
+    gap: .3rem;
+    padding: .2rem 1rem;
+  }
+}
+
+.cardapio__container .btn__pizza,
+.cardapio__container .btn__carnes,
+.cardapio__container .btn__massas,
+.cardapio__container .btn__bebidas {
+  font-family: "Neucha", cursive;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .cardapio__container .btn__pizza,
   .cardapio__container .btn__carnes,
   .cardapio__container .btn__massas,
   .cardapio__container .btn__bebidas {
-    font-family: "Neucha", cursive;
-    font-size: 1.4rem; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .cardapio__container .btn__pizza,
-      .cardapio__container .btn__carnes,
-      .cardapio__container .btn__massas,
-      .cardapio__container .btn__bebidas {
-        font-size: 1rem; } }
+    font-size: 1rem;
+  }
+}
+
+.cardapio__container .cardapio__img {
+  width: 60px;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .cardapio__container .cardapio__img {
-    width: 60px; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .cardapio__container .cardapio__img {
-        width: 35px; } }
+    width: 35px;
+  }
+}
 
 .cardapio__card {
   display: flex;
   box-shadow: 1px 1px 15px 2px #ff6600;
-  padding-bottom: 1.5rem; }
-  .cardapio__card .card__titulo {
-    font-family: "Merienda", cursive;
-    text-align: center;
-    font-size: 4rem;
-    color: #ff6600;
-    padding: 1rem; }
-  .cardapio__card .cardapio__flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: .6rem;
-    perspective: 1000px; }
+  padding-bottom: 1.5rem;
+}
+
+.cardapio__card .card__titulo {
+  font-family: "Merienda", cursive;
+  text-align: center;
+  font-size: 4rem;
+  color: #ff6600;
+  padding: 1rem;
+}
+
+.cardapio__card .cardapio__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: .6rem;
+  perspective: 1000px;
+}
+
+.cardapio__card .card__item {
+  padding: 1rem;
+  border-radius: 6px;
+  max-width: 300px;
+  transform: rotateX(3deg);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 10px #ff6600;
+  border: 1px solid #ff6600;
+}
+
+.cardapio__card .card__item:hover {
+  box-shadow: 0 4px 10px #fff;
+  transition: all .6s;
+  transform: rotateX(0deg);
+  border: 1px solid #fff;
+}
+
+.cardapio__card .card__item:hover .pequena {
+  background-color: #fff;
+}
+
+.cardapio__card .card__item:hover .media {
+  background-color: #fff;
+}
+
+.cardapio__card .card__item:hover .grande {
+  background-color: #fff;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .cardapio__card .card__item {
-    padding: 1rem;
-    border-radius: 6px;
-    max-width: 300px;
-    transform: rotateX(3deg);
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    box-shadow: 0 4px 10px #ff6600;
-    border: 1px solid #ff6600; }
-    .cardapio__card .card__item:hover {
-      box-shadow: 0 4px 10px #fff;
-      transition: all .6s;
-      transform: rotateX(0deg);
-      border: 1px solid #fff; }
-    .cardapio__card .card__item:hover .pequena {
-      background-color: #fff; }
-    .cardapio__card .card__item:hover .media {
-      background-color: #fff; }
-    .cardapio__card .card__item:hover .grande {
-      background-color: #fff; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .cardapio__card .card__item {
-        transform: none; } }
-    @media (min-width: 480px) and (max-width: 768px) {
-      .cardapio__card .card__item {
-        transform: none; } }
-  .cardapio__card .card__cabecalho {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    margin-bottom: 1rem; }
-  .cardapio__card .img__item {
-    width: 5.6rem; }
+    transform: none;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .cardapio__card .card__item {
+    transform: none;
+  }
+}
+
+.cardapio__card .card__cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  margin-bottom: 1rem;
+}
+
+.cardapio__card .img__item {
+  width: 5.6rem;
+}
+
+.cardapio__card .sabor {
+  font-family: "Tangerine", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .cardapio__card .sabor {
-    font-family: "Tangerine", cursive;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #fff; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .cardapio__card .sabor {
-        font-size: 2.7rem; } }
+    font-size: 2.7rem;
+  }
+}
+
+.cardapio__card .ingredientes {
+  font-family: "Neucha", cursive;
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .cardapio__card .ingredientes {
-    font-family: "Neucha", cursive;
-    font-size: 1.4rem;
-    color: #fff;
-    margin-bottom: .5rem;
-    text-align: center; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .cardapio__card .ingredientes {
-        font-size: 1.2rem; } }
-  .cardapio__card .preco__item {
-    margin: 1rem 0; }
+    font-size: 1.2rem;
+  }
+}
+
+.cardapio__card .preco__item {
+  margin: 1rem 0;
+}
+
+.cardapio__card .precos {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .cardapio__card .precos {
-    display: flex;
     gap: .5rem;
-    justify-content: center; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .cardapio__card .precos {
-        gap: .5rem; } }
+  }
+}
+
+.cardapio__card .pequena,
+.cardapio__card .media,
+.cardapio__card .grande {
+  background-color: #ff6600;
+  padding: .2rem;
+  border-radius: 5px;
+  font-family: "Neucha", cursive;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #FF8F33;
+}
+
+.cardapio__card .pequena strong,
+.cardapio__card .media strong,
+.cardapio__card .grande strong {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .cardapio__card .pequena,
   .cardapio__card .media,
   .cardapio__card .grande {
-    background-color: #ff6600;
-    padding: .2rem;
-    border-radius: 5px;
-    font-family: "Neucha", cursive;
-    font-size: 1.2rem;
-    text-align: center;
-    background-color: #FF8F33; }
-    .cardapio__card .pequena strong,
-    .cardapio__card .media strong,
-    .cardapio__card .grande strong {
-      font-size: 1.2rem; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .cardapio__card .pequena,
-      .cardapio__card .media,
-      .cardapio__card .grande {
-        font-size: 1rem; } }
-  .cardapio__card .bordas {
-    font-family: "Neucha", cursive;
-    color: #fff;
-    text-align: center;
-    padding: .4rem;
-    margin-bottom: 1.2rem; }
-  .cardapio__card .btn__pedido {
-    padding: .6rem .8rem;
-    border-radius: 5px;
-    font-family: "Neucha", cursive;
-    font-size: 1.2rem;
-    width: 180px;
-    text-align: center;
-    border-bottom-left-radius: 20px;
-    color: #fff;
-    margin: 0 auto;
-    background: rgba(255, 102, 0, 0.6);
-    border-radius: 1rem;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid #fff; }
-    .cardapio__card .btn__pedido:hover {
-      background-color: #fff;
-      color: #000;
-      transition: all .4s;
-      border: 1px solid #fff; }
-  .cardapio__card .contato__cardapio {
-    font-size: 1.5rem;
-    color: #000; }
-  .cardapio__card .link__ico {
-    font-size: 1.5rem;
-    color: #000; }
+    font-size: 1rem;
+  }
+}
+
+.cardapio__card .bordas {
+  font-family: "Neucha", cursive;
+  color: #fff;
+  text-align: center;
+  padding: .4rem;
+  margin-bottom: 1.2rem;
+}
+
+.cardapio__card .btn__pedido {
+  padding: .6rem .8rem;
+  border-radius: 5px;
+  font-family: "Neucha", cursive;
+  font-size: 1.2rem;
+  width: 180px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  color: #fff;
+  margin: 0 auto;
+  background: rgba(255, 102, 0, 0.6);
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #fff;
+}
+
+.cardapio__card .btn__pedido:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all .4s;
+  border: 1px solid #fff;
+}
+
+.cardapio__card .contato__cardapio {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.cardapio__card .link__ico {
+  font-size: 1.5rem;
+  color: #000;
+}
 
 .js-tabConteudo {
-  display: none; }
+  display: none;
+}
 
 .js-tabConteudo.ativo {
   display: block;
-  animation: show 1s forwards; }
+  animation: show 1s forwards;
+}
 
 @keyframes show {
   from {
     opacity: 0;
-    transform: translate3d(-30px, 0, 0); }
+    transform: translate3d(-30px, 0, 0);
+  }
   to {
     opacity: 1;
-    transform: translate3d(0, 0, 0); } }
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 .swiper {
   width: 100%;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+}
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 300px;
-  height: 300px; }
+  height: 300px;
+}
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #ff6600; }
+  color: #ff6600;
+}
 
 .swiper-button-next:after {
-  font-size: 30px; }
+  font-size: 30px;
+}
 
 .swiper-button-prev:after {
-  font-size: 30px; }
+  font-size: 30px;
+}
 
 .galeria {
   background-image: url("../img/galeria/background-galeria.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 130vh; }
+  height: 130vh;
+}
+
+.galeria .galeria__titulo {
+  margin-bottom: 4rem;
+  font-family: "Tangerine", cursive;
+  color: #fff;
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 5rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .galeria .galeria__titulo {
-    margin-bottom: 4rem;
-    font-family: "Tangerine", cursive;
-    color: #fff;
-    text-align: center;
-    padding-top: 4rem;
-    font-size: 5rem; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .galeria .galeria__titulo {
-        font-size: 2rem; } }
-  .galeria .galeria__container {
-    padding: 2rem; }
-  .galeria .swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px; }
+    font-size: 2rem;
+  }
+}
+
+.galeria .galeria__container {
+  padding: 2rem;
+}
+
+.galeria .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.galeria .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 540px;
+  height: 540px;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .galeria .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 540px;
-    height: 540px;
-    padding-bottom: 2rem; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .galeria .swiper-slide {
-        width: 300px;
-        height: 300px; } }
-    @media (min-width: 480px) and (max-width: 768px) {
-      .galeria .swiper-slide {
-        width: 400px;
-        height: 400px; } }
-  .galeria .swiper-slide img {
-    box-shadow: 2px 2px 14px 2px #ff6600;
-    border: solid 1px #fff; }
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .galeria .swiper-slide {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.galeria .swiper-slide img {
+  box-shadow: 2px 2px 14px 2px #ff6600;
+  border: solid 1px #fff;
+}
 
 .sobre {
   background-image: url("../img/sobre/background-sobre.jpg");
@@ -632,99 +914,149 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 4rem; }
-  @media (min-width: 0px) and (max-width: 480px) {
-    .sobre {
-      height: 300vh;
-      gap: 0rem; } }
-  @media (min-width: 480px) and (max-width: 768px) {
-    .sobre {
-      height: 300vh;
-      gap: 0.4rem; } }
-  @media (min-width: 768px) and (max-width: 1280px) {
-    .sobre {
-      height: 220vh;
-      gap: 0.4rem; } }
+  gap: 4rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .sobre {
+    height: 300vh;
+    gap: 0rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .sobre {
+    height: 300vh;
+    gap: 0.4rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .sobre {
+    height: 220vh;
+    gap: 0.4rem;
+  }
+}
+
+.sobre .img__logo__sobre {
+  width: 350px;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .sobre .img__logo__sobre {
-    width: 350px; }
-    @media (min-width: 0px) and (max-width: 480px) {
-      .sobre .img__logo__sobre {
-        width: 280px;
-        margin: -120px; } }
-  .sobre .sobre__info {
-    width: 500px; }
-  .sobre .sobre__titulo {
-    color: #ff6600;
-    font-family: "Tangerine", cursive;
-    font-size: 6rem;
-    text-align: center; }
-  .sobre .sobre__p {
-    color: #fff;
-    font-family: "Neucha", cursive;
-    font-size: 1.4rem;
-    padding: 1rem; }
+    width: 280px;
+    margin: -120px;
+  }
+}
+
+.sobre .sobre__info {
+  width: 500px;
+}
+
+.sobre .sobre__titulo {
+  color: #ff6600;
+  font-family: "Tangerine", cursive;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.sobre .sobre__p {
+  color: #fff;
+  font-family: "Neucha", cursive;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
 
 .footer {
   background-image: url("../img/sobre/background-sobre.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
-  .footer .footer__info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    justify-content: center;
-    padding-bottom: 4rem; }
-  .footer .endereco {
-    font-family: "Neucha", cursive;
-    font-size: 2rem;
-    color: #ff6600; }
-  .footer .rua,
-  .footer .cidade {
-    font-family: "Neucha", cursive;
-    font-size: 1.4rem;
-    color: #fff; }
-  .footer .redes__titulo {
-    font-family: "Neucha", cursive;
-    font-size: 1.5rem;
-    color: #ff6600;
-    margin-top: 2rem; }
-  .footer .footer__redes {
-    display: flex;
-    justify-content: center; }
-  .footer .titulo__pagamento {
-    font-family: "Neucha", cursive;
-    font-size: 2rem;
-    color: #ff6600; }
-  .footer .bandeiras__pag {
-    width: 300px; }
-  .footer .titulo__funcionamento {
-    font-family: "Neucha", cursive;
-    font-size: 2rem;
-    color: #ff6600; }
-  .footer .dias {
-    font-family: "Neucha", cursive;
-    font-size: 1.4rem;
-    color: #fff; }
-  .footer .desenvolvedor {
-    background-color: #000;
-    padding: .5rem 0; }
-  .footer .desenvolvedor img {
-    margin: 0 auto;
-    width: 35px; }
-  .footer .desenvolvedor p {
-    text-align: center;
-    font-family: "Neucha", cursive;
-    color: #fff; }
-  .footer .desenvolvido__link {
-    text-align: center;
-    font-family: "Neucha", cursive;
-    color: #fff;
-    width: 120px;
-    padding: 0.4rem;
-    margin: 0 auto;
-    border-radius: 5px;
-    border: 1px solid #fff; }
-    .footer .desenvolvido__link:hover {
-      background-color: #ff6600;
-      transition: all .6s; }
+  background-size: cover;
+}
+
+.footer .footer__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.footer .endereco {
+  font-family: "Neucha", cursive;
+  font-size: 2rem;
+  color: #ff6600;
+}
+
+.footer .rua,
+.footer .cidade {
+  font-family: "Neucha", cursive;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.footer .redes__titulo {
+  font-family: "Neucha", cursive;
+  font-size: 1.5rem;
+  color: #ff6600;
+  margin-top: 2rem;
+}
+
+.footer .footer__redes {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .titulo__pagamento {
+  font-family: "Neucha", cursive;
+  font-size: 2rem;
+  color: #ff6600;
+}
+
+.footer .bandeiras__pag {
+  width: 300px;
+}
+
+.footer .titulo__funcionamento {
+  font-family: "Neucha", cursive;
+  font-size: 2rem;
+  color: #ff6600;
+}
+
+.footer .dias {
+  font-family: "Neucha", cursive;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.footer .desenvolvedor {
+  background-color: #000;
+  padding: .5rem 0;
+}
+
+.footer .desenvolvedor img {
+  margin: 0 auto;
+  width: 35px;
+}
+
+.footer .desenvolvedor p {
+  text-align: center;
+  font-family: "Neucha", cursive;
+  color: #fff;
+}
+
+.footer .desenvolvido__link {
+  text-align: center;
+  font-family: "Neucha", cursive;
+  color: #fff;
+  width: 120px;
+  padding: 0.4rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+.footer .desenvolvido__link:hover {
+  background-color: #ff6600;
+  transition: all .6s;
+}
