@@ -4,6 +4,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 130vh;
+
+        @include celular {
+            height: 100vh;
+        }
+
+
     
 
     .galeria__titulo {
@@ -15,7 +21,8 @@
         font-size: 5rem;
 
             @include celular {
-                font-size: 2rem;
+                font-size: 4rem;
+                margin-bottom: 2rem;
             }
     }
 

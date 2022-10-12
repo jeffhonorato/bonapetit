@@ -855,6 +855,12 @@ img {
   height: 130vh;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .galeria {
+    height: 100vh;
+  }
+}
+
 .galeria .galeria__titulo {
   margin-bottom: 4rem;
   font-family: "Tangerine", cursive;
@@ -866,7 +872,8 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .galeria .galeria__titulo {
-    font-size: 2rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
   }
 }
 
