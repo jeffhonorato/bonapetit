@@ -75,7 +75,7 @@
                 align-items: center;
                 gap: .2rem;
                 background-color: $cor-menu-itens;
-                padding: .4rem;
+                padding: .3rem;
                 cursor: pointer;
                 border-radius: 10px;
                 box-shadow: 1px 1px 0px 2px #fff;
@@ -88,10 +88,14 @@
 
                     @include celular {
                         gap: .3rem;
-                        padding: .2rem 1rem;
+                        padding: .2rem .5rem;
                     }
                 
             }
+
+      
+
+            
 
             .btn__pizza,
             .btn__carnes,
@@ -112,6 +116,18 @@
                         width: 35px; 
                     }
             }
+
+            .burguer {
+                font-size: 1rem;
+            }
+
+            .burguer__img {
+                width: 40px;
+
+                    @include celular {
+                        width: 24px;
+                    }
+            }
     }
     
     .cardapio__card {
@@ -125,6 +141,10 @@
                 font-size: 4rem;
                 color: $cor-menu-itens;
                 padding: 1rem;
+
+                    @include celular {
+                        font-size: 3rem;
+                    }
             }
 
             .cardapio__flex {
