@@ -6,12 +6,9 @@ var swiper = new Swiper(".mySwiper", {
     coverflowEffect: {
       rotate: 10,
       stretch: 0,
-      depth: 100,
-      modifier: 11,
+      depth: 60,
+      modifier: 7,
       slideShadows: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
     },
     navigation: {
         nextEl: ".swiper-button-next",

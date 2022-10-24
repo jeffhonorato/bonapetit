@@ -13,8 +13,7 @@
     place-content: center;
     align-items: center;
     gap: 4rem;
-    height: 80vh;
-    background-color: darkgoldenrod;
+    height: 90vh;
 }
 
 .musica__titulo {
@@ -30,7 +29,7 @@
 }
 
 .musica__poster {
-    width: 280px;
+    width: 300px;
     border-radius: 10px;
     box-shadow: 4px 1px 5px $cor-menu-itens;
     border: 1px solid #fff;
