@@ -495,7 +495,7 @@ img {
 
 .musica__container {
   display: grid;
-  grid-template-columns: 300px 800px;
+  grid-template-columns: 300px 600px;
   place-content: center;
   align-items: center;
   gap: 4rem;
@@ -517,14 +517,14 @@ img {
 .musica__poster {
   width: 300px;
   border-radius: 10px;
-  box-shadow: 4px 1px 5px #ff6600;
+  box-shadow: 1px 1px 20px #ff6600;
   border: 1px solid #fff;
 }
 
 /* SWIPER JS */
 .swiper {
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -534,6 +534,7 @@ img {
   background-size: cover;
   width: 300px;
   height: 500px;
+  padding: 1rem;
 }
 
 .cardapio__cabecalho {
