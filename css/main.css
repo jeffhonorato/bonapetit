@@ -485,6 +485,11 @@ img {
   }
 }
 
+.happyhour {
+  height: 80vh;
+  background-color: #000;
+}
+
 .cardapio__cabecalho {
   background-image: url("../img/cardapio/background-cardapio-titulo.jpg");
   background-position: center;
