@@ -1,10 +1,10 @@
 .happyhour {
-    height: 80vh;
+    height: 90vh;
     background-image: url("../img/happyhour/background-musica.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 .musica__container {
@@ -12,8 +12,9 @@
     grid-template-columns: 300px 800px; 
     place-content: center;
     align-items: center;
+    gap: 4rem;
     height: 80vh;
-    background-color: cadetblue;
+    background-color: darkgoldenrod;
 }
 
 .musica__titulo {
@@ -25,7 +26,14 @@
 }
 
 .musica__sliders {
-    background-color: cyan;
+    padding-bottom: 4rem;
+}
+
+.musica__poster {
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 4px 1px 5px $cor-menu-itens;
+    border: 1px solid #fff;
 }
 
 
@@ -33,6 +41,7 @@
 /* SWIPER JS */
 .swiper {
     width: 60%;
+    height: 60%;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -41,10 +50,10 @@
     background-position: center;
     background-size: cover;
     width: 300px;
-    height: 300px;
+    height: 500px;
   }
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-  }
+//   .swiper-slide img {
+//     display: block;
+//     width: 100%;
+//   }
