@@ -493,6 +493,12 @@ img {
   background-size: cover;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .happyhour {
+    height: 150vh;
+  }
+}
+
 .musica__container {
   display: grid;
   grid-template-columns: 300px 600px;
@@ -502,12 +508,26 @@ img {
   height: 90vh;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .musica__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .musica__titulo {
-  color: #fff;
+  color: #ff6600;
+  font-family: "Tangerine", cursive;
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 .musica__p {
   color: #fff;
+  font-family: "Neucha", cursive;
+  padding: .4rem;
 }
 
 .musica__sliders {

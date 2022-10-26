@@ -5,6 +5,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+        @include celular {
+            height: 150vh;
+        }
+
 }
 
 .musica__container {
@@ -14,18 +18,36 @@
     align-items: center;
     gap: 4rem;
     height: 90vh;
+
+        @include celular {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
 }
 
 .musica__titulo {
-    color: #fff;
+    color: $cor-menu-itens;
+    font-family: $fonte-titulo;
+    font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
 .musica__p {
     color: #fff;
+    font-family: $fonte-corpo;
+    padding: .4rem;
+
 }
 
 .musica__sliders {
     padding-bottom: 4rem;
+    
+    @include celular {
+        
+    }
+
 }
 
 .musica__poster {
