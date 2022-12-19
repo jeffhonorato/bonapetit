@@ -543,6 +543,13 @@ img {
   margin: 0 auto;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .musica__poster {
+    width: 300px;
+    height: 360px;
+  }
+}
+
 /* SWIPER JS */
 .swiper {
   width: 100%;

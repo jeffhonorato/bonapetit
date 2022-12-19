@@ -54,6 +54,11 @@
     box-shadow: 1px 1px 20px $cor-menu-itens;
     border: 1px solid #fff;
     margin: 0 auto;
+
+        @include celular {
+            width: 300px;
+            height: 360px;
+        }
 }
 
 
