@@ -1027,7 +1027,7 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .sobre {
-    height: 300vh;
+    height: 200vh;
     gap: 0rem;
   }
 }
@@ -1052,8 +1052,7 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .sobre .img__logo__sobre {
-    width: 280px;
-    margin: -120px;
+    width: 320px;
   }
 }
 
