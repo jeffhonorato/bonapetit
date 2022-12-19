@@ -495,7 +495,7 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .happyhour {
-    height: 150vh;
+    height: 110vh;
   }
 }
 
@@ -525,6 +525,7 @@ img {
 @media (min-width: 0px) and (max-width: 480px) {
   .musica__titulo {
     margin-top: 10rem;
+    margin-bottom: 2rem;
   }
 }
 

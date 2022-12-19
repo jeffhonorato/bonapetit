@@ -6,7 +6,7 @@
     background-size: cover;
 
         @include celular {
-            height: 150vh;
+            height: 110vh;
         }
 
 }
@@ -30,10 +30,10 @@
     color: $cor-menu-itens;
     font-family: $fonte-titulo;
     font-size: 4rem;
-    // margin: 2rem;
 
         @include celular {
             margin-top: 10rem;
+            margin-bottom: 2rem;
         }
 }
 
