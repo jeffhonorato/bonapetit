@@ -506,12 +506,13 @@ img {
   align-items: center;
   gap: 4rem;
   height: 90vh;
-  background-color: darkkhaki;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
   .musica__container {
     grid-template-columns: 310px;
+    align-items: center;
+    place-content: center;
   }
 }
 
@@ -538,6 +539,7 @@ img {
   border-radius: 10px;
   box-shadow: 1px 1px 20px #ff6600;
   border: 1px solid #fff;
+  margin: 0 auto;
 }
 
 /* SWIPER JS */

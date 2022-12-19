@@ -18,10 +18,11 @@
     align-items: center;
     gap: 4rem;
     height: 90vh;
-    background-color: darkkhaki;
 
         @include celular {
             grid-template-columns: 310px; 
+            align-items: center;
+            place-content: center;
         }
 }
 
@@ -52,6 +53,7 @@
     border-radius: 10px;
     box-shadow: 1px 1px 20px $cor-menu-itens;
     border: 1px solid #fff;
+    margin: 0 auto;
 }
 
 
