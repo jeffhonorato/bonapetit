@@ -506,6 +506,7 @@ img {
   align-items: center;
   gap: 4rem;
   height: 90vh;
+  background-color: darkkhaki;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -529,10 +530,6 @@ img {
   color: #fff;
   font-family: "Neucha", cursive;
   padding: .4rem;
-}
-
-.musica__sliders {
-  padding-bottom: 4rem;
 }
 
 .musica__poster {
@@ -952,6 +949,7 @@ img {
 @media (min-width: 0px) and (max-width: 480px) {
   .galeria {
     height: 100vh;
+    background-color: aqua;
   }
 }
 
@@ -971,11 +969,10 @@ img {
   }
 }
 
-.galeria .galeria__container {
-  padding: 2rem;
-  display: grid;
-  place-content: center;
-  background-color: aqua;
+.galeria .galeria__img {
+  width: 600px;
+  box-shadow: 2px 2px 14px 2px #ff6600;
+  border: solid 1px #fff;
 }
 
 .galeria .swiper {
@@ -987,28 +984,8 @@ img {
 .galeria .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 540px;
-  height: 540px;
-  padding-bottom: 2rem;
-}
-
-@media (min-width: 0px) and (max-width: 480px) {
-  .galeria .swiper-slide {
-    width: 300px;
-    height: 300px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 768px) {
-  .galeria .swiper-slide {
-    width: 400px;
-    height: 400px;
-  }
-}
-
-.galeria .swiper-slide img {
-  box-shadow: 2px 2px 14px 2px #ff6600;
-  border: solid 1px #fff;
+  width: 300px;
+  height: 500px;
 }
 
 .sobre {

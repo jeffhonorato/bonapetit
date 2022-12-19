@@ -3,7 +3,7 @@ var swiper = new Swiper(".swiper__galeria", {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
-    loop: true,
+    loop: "true",
     coverflowEffect: {
       rotate: 20,
       stretch: 0,

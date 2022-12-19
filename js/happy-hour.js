@@ -1,4 +1,4 @@
-var swiper = new Swiper(".musica", {
+var swiper = new Swiper(".swiper__musica", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
