@@ -24,6 +24,7 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            width: 100%;
         }
 }
 
@@ -43,11 +44,6 @@
 
 .musica__sliders {
     padding-bottom: 4rem;
-    
-    @include celular {
-        
-    }
-
 }
 
 .musica__poster {

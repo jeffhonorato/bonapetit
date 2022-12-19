@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiper__galeria", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
