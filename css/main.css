@@ -864,6 +864,18 @@ img {
   }
 }
 
+.cardapio__card .precos__hamburguers {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .cardapio__card .precos__hamburguers {
+    gap: .5rem;
+  }
+}
+
 .cardapio__card .bordas {
   font-family: "Neucha", cursive;
   color: #fff;
@@ -890,6 +902,30 @@ img {
 }
 
 .cardapio__card .btn__pedido:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all .4s;
+  border: 1px solid #fff;
+}
+
+.cardapio__card .btn__pedido--hamburguer {
+  padding: .6rem .8rem;
+  border-radius: 5px;
+  font-family: "Neucha", cursive;
+  font-size: 1.2rem;
+  width: 180px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  color: #fff;
+  margin: 1rem auto;
+  background: rgba(255, 102, 0, 0.6);
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #fff;
+}
+
+.cardapio__card .btn__pedido--hamburguer:hover {
   background-color: #fff;
   color: #000;
   transition: all .4s;
