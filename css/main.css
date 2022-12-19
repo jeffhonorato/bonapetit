@@ -973,6 +973,9 @@ img {
 
 .galeria .galeria__container {
   padding: 2rem;
+  display: grid;
+  place-content: center;
+  background-color: aqua;
 }
 
 .galeria .swiper {
