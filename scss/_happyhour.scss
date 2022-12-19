@@ -21,11 +21,7 @@
     background-color: darkkhaki;
 
         @include celular {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
+            grid-template-columns: 310px; 
         }
 }
 

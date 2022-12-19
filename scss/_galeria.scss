@@ -4,6 +4,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 130vh;
+    display: grid;
+    place-content: center;
 
         @include celular {
             height: 100vh;
@@ -35,7 +37,7 @@
     // }
 
     .galeria__img {
-        width: 600px;
+        width: 800px;
         box-shadow: 2px 2px 14px 2px $cor-menu-itens;
         border: solid 1px #fff;
 
@@ -60,8 +62,6 @@
       .swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 300px;
-        height: 500px;
       }
 
 }

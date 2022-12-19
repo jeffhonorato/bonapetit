@@ -511,11 +511,7 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .musica__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    grid-template-columns: 310px;
   }
 }
 
@@ -949,6 +945,8 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   height: 130vh;
+  display: grid;
+  place-content: center;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -975,7 +973,7 @@ img {
 }
 
 .galeria .galeria__img {
-  width: 600px;
+  width: 800px;
   box-shadow: 2px 2px 14px 2px #ff6600;
   border: solid 1px #fff;
 }
@@ -989,8 +987,6 @@ img {
 .galeria .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 500px;
 }
 
 .sobre {

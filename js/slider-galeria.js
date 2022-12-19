@@ -8,7 +8,7 @@ var swiper = new Swiper(".swiper__galeria", {
       rotate: 20,
       stretch: 0,
       depth: 100,
-      modifier: 5,
+      modifier: 3,
       slideShadows: false,
     },
     // pagination: {
