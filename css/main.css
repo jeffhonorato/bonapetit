@@ -523,7 +523,12 @@ img {
   color: #ff6600;
   font-family: "Tangerine", cursive;
   font-size: 4rem;
-  margin-bottom: 1rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .musica__titulo {
+    margin-top: 10rem;
+  }
 }
 
 .musica__p {

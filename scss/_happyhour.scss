@@ -33,7 +33,11 @@
     color: $cor-menu-itens;
     font-family: $fonte-titulo;
     font-size: 4rem;
-    margin-bottom: 1rem;
+    // margin: 2rem;
+
+        @include celular {
+            margin-top: 10rem;
+        }
 }
 
 .musica__p {
