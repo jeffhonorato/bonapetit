@@ -169,6 +169,10 @@ img {
   padding: 3rem 0rem;
 }
 
+.promocao .promo__box {
+  padding: 6rem 0;
+}
+
 .promocao .promo__box__cabecalho {
   text-align: center;
   padding: 4rem 0;
@@ -486,7 +490,7 @@ img {
 }
 
 .happyhour {
-  height: 105vh;
+  height: 120vh;
   background-image: url("../img/happyhour/background-musica.jpg");
   background-position: center;
   background-repeat: no-repeat;
