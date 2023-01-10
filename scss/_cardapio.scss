@@ -135,7 +135,7 @@
     .cardapio__card {
         display: flex;
         box-shadow: 1px 1px 15px 2px $cor-menu-itens;
-        padding-bottom: 8rem;
+        padding-bottom: 1rem;
 
             .card__titulo {
                 font-family: $fonte-subtitulo;
@@ -390,7 +390,7 @@
         background-position: center;
         background-size: cover;
         width: 320px;
-        height: 400px;
+        height: 550px;
       }
 
     //   .swiper-slide img {

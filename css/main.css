@@ -706,7 +706,7 @@ img {
 .cardapio__card {
   display: flex;
   box-shadow: 1px 1px 15px 2px #ff6600;
-  padding-bottom: 8rem;
+  padding-bottom: 1rem;
 }
 
 .cardapio__card .card__titulo {
@@ -972,7 +972,7 @@ img {
   background-position: center;
   background-size: cover;
   width: 320px;
-  height: 400px;
+  height: 550px;
 }
 
 .swiper-button-next,
