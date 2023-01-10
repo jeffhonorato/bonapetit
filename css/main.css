@@ -604,7 +604,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-bottom: 3rem;
 }
 
 .cardapio__container .cardapio__sub {
@@ -707,7 +706,7 @@ img {
 .cardapio__card {
   display: flex;
   box-shadow: 1px 1px 15px 2px #ff6600;
-  padding-bottom: 1.5rem;
+  padding-bottom: 8rem;
 }
 
 .cardapio__card .card__titulo {
@@ -784,7 +783,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .5rem;
+  gap: .2rem;
   margin-bottom: 1rem;
 }
 
@@ -972,7 +971,7 @@ img {
   background-position: center;
   background-size: cover;
   width: 320px;
-  height: 340px;
+  height: 400px;
 }
 
 .swiper-button-next,
