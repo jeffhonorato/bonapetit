@@ -787,15 +787,16 @@ img {
   margin-bottom: 1rem;
 }
 
-.cardapio__card .img__item {
-  width: 100px;
+.cardapio__card .ico__animation--pizza {
+  display: block;
+  margin: 0 auto;
 }
 
 .cardapio__card .sabor {
   font-family: "Tangerine", cursive;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
-  color: #fff;
+  color: #EFB321;
   user-select: none;
 }
 

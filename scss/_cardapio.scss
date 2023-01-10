@@ -164,11 +164,7 @@
                 border-radius: 6px;
                 max-width: 320px;
                 transform: rotateX(3deg);
-                // background: rgba(255, 255, 255, .1);
-                // border-radius: 16px;
-                // box-shadow: 0 4px 10px $cor-menu-itens;
-                // // backdrop-filter: blur(10px);       
-                // border: 1px solid $cor-menu-itens;
+              
                 background: rgba(0, 0, 0, 0.34);
                 border-radius: 16px;
                 box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
@@ -215,15 +211,16 @@
                 margin-bottom: 1rem;
             }
 
-            .img__item {
-                width: 100px;
+            .ico__animation--pizza {
+                display: block;
+                margin: 0 auto;
             }
 
             .sabor {
                 font-family: $fonte-titulo;
-                font-size: 3rem;
+                font-size: 4rem;
                 font-weight: bold;
-                color: #fff;
+                color: $cor-btn;
                 user-select: none;
 
                     @include celular {
