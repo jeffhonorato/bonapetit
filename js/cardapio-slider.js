@@ -20,7 +20,7 @@ var swiper = new Swiper(".pizza-swiper", {
       },
   });
 
-  var swiper = new Swiper(".carne-swiper", {
+  var swiper = new Swiper(".hamburguer-swiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,

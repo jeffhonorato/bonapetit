@@ -1,0 +1,88 @@
+.c__card--hamburguer {
+    display: flex;
+    box-shadow: 1px 1px 15px 2px $cor-menu-itens;
+    padding-bottom: 1rem;
+
+
+    .card__titulo--hamburguer {
+        font-family: $fonte-subtitulo;
+        text-align: center;
+        font-size: 4rem;
+        color: $cor-menu-itens;
+        padding: 1rem;
+
+            @include celular {
+                font-size: 3rem;
+            }
+    }
+
+    .cardapio__flex--hamburguer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: .6rem;
+        perspective: 1000px;
+       
+    }
+
+    .card__item--hamburguer {
+        padding: 1rem;
+        border-radius: 6px;
+        max-width: 320px;
+        transform: rotateX(3deg);
+      
+        background: rgba(0, 0, 0, 0.34);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(6.6px);
+        -webkit-backdrop-filter: blur(6.6px);
+        border: 1px solid #fff;
+
+            &:hover {
+                box-shadow: 0 4px 10px #fff;
+                transition: all .6s;
+                transform: rotateX(0deg);
+                border: 1px solid #fff;
+            }
+
+            &:hover .pequena {
+                background-color: #fff;
+                box-shadow: 1px 1px 10px $cor-menu-itens;
+            }
+
+            &:hover .media {
+                background-color: #fff;
+                box-shadow: 1px 1px 10px $cor-menu-itens;
+            }
+
+            &:hover .grande {
+                background-color: #fff;
+                box-shadow: 1px 1px 10px $cor-menu-itens;
+            }
+
+            @include celular {
+                transform: none;
+            }
+
+            @include tablet {
+                transform: none;
+            }
+    }
+
+}
+
+
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 550px;
+  }

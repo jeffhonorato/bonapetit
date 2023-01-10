@@ -132,7 +132,7 @@
     }
     
 
-    .cardapio__card {
+    .cardapio__card--pizza {
         display: flex;
         box-shadow: 1px 1px 15px 2px $cor-menu-itens;
         padding-bottom: 1rem;
@@ -229,18 +229,7 @@
                     }
             }
 
-            .sabor__nome {
-                font-family: $fonte-titulo;
-                font-size: 3rem;
-                font-weight: bold;
-                color: $cor-btn;
-                user-select: none;
-
-                    @include celular {
-                        font-size: 2.7rem;
-                        user-select: none;
-                    }
-            }
+  
 
             .ingredientes {
                 font-family: $fonte-corpo;
