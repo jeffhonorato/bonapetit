@@ -512,7 +512,6 @@ img {
   justify-content: center;
   gap: 4rem;
   height: 90vh;
-  background-color: darkred;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -520,7 +519,7 @@ img {
     grid-template-columns: 310px;
     align-items: center;
     place-content: center;
-    gap: 2rem;
+    gap: .5rem;
   }
 }
 
@@ -564,10 +563,6 @@ img {
   align-content: center;
 }
 
-.teste {
-  background-color: darkseagreen;
-}
-
 /* SWIPER JS */
 .swiper {
   width: 100%;
@@ -581,6 +576,8 @@ img {
   background-size: cover;
   width: 300px;
   height: 500px;
+  display: grid;
+  place-content: center;
 }
 
 .cardapio__cabecalho {
