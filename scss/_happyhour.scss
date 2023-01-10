@@ -1,5 +1,4 @@
 .happyhour {
-    height: 120vh;
     background-image: url("../img/happyhour/background-musica.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -16,8 +15,11 @@
     grid-template-columns: 300px 600px; 
     place-content: center;
     align-items: center;
+    justify-content: center;
     gap: 4rem;
     height: 90vh;
+
+    background-color: darkred;
 
         @include celular {
             grid-template-columns: 310px; 
@@ -62,7 +64,17 @@
         }
 }
 
+.musica__sliders {
+    // background-color: darkcyan;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+}
 
+.teste {
+    background-color: darkseagreen;
+
+}
 
 /* SWIPER JS */
 .swiper  {

@@ -169,8 +169,10 @@ img {
   padding: 3rem 0rem;
 }
 
-.promocao .promo__box {
-  padding: 6rem 0;
+@media (min-width: 0px) and (max-width: 480px) {
+  .promocao .promo__box {
+    padding: 6rem 0;
+  }
 }
 
 .promocao .promo__box__cabecalho {
@@ -490,7 +492,6 @@ img {
 }
 
 .happyhour {
-  height: 120vh;
   background-image: url("../img/happyhour/background-musica.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -508,8 +509,10 @@ img {
   grid-template-columns: 300px 600px;
   place-content: center;
   align-items: center;
+  justify-content: center;
   gap: 4rem;
   height: 90vh;
+  background-color: darkred;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -553,6 +556,16 @@ img {
     width: 300px;
     height: 360px;
   }
+}
+
+.musica__sliders {
+  height: 100vh;
+  display: grid;
+  align-content: center;
+}
+
+.teste {
+  background-color: darkseagreen;
 }
 
 /* SWIPER JS */
@@ -806,6 +819,21 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .cardapio__card .sabor {
+    font-size: 2.7rem;
+    user-select: none;
+  }
+}
+
+.cardapio__card .sabor__nome {
+  font-family: "Tangerine", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #EFB321;
+  user-select: none;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .cardapio__card .sabor__nome {
     font-size: 2.7rem;
     user-select: none;
   }
