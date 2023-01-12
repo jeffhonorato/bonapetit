@@ -1051,21 +1051,6 @@ img {
   border: 1px solid #fff;
 }
 
-.c__card--hamburguer .card__item--hamburguer:hover .pequena {
-  background-color: #fff;
-  box-shadow: 1px 1px 10px #ff6600;
-}
-
-.c__card--hamburguer .card__item--hamburguer:hover .media {
-  background-color: #fff;
-  box-shadow: 1px 1px 10px #ff6600;
-}
-
-.c__card--hamburguer .card__item--hamburguer:hover .grande {
-  background-color: #fff;
-  box-shadow: 1px 1px 10px #ff6600;
-}
-
 @media (min-width: 0px) and (max-width: 480px) {
   .c__card--hamburguer .card__item--hamburguer {
     transform: none;
@@ -1249,21 +1234,6 @@ img {
   border: 1px solid #fff;
 }
 
-.c__card--massa .card__item--massa:hover .pequena {
-  background-color: #fff;
-  box-shadow: 1px 1px 10px #ff6600;
-}
-
-.c__card--massa .card__item--massa:hover .media {
-  background-color: #fff;
-  box-shadow: 1px 1px 10px #ff6600;
-}
-
-.c__card--massa .card__item--massa:hover .grande {
-  background-color: #fff;
-  box-shadow: 1px 1px 10px #ff6600;
-}
-
 @media (min-width: 0px) and (max-width: 480px) {
   .c__card--massa .card__item--massa {
     transform: none;
@@ -1348,7 +1318,7 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .c__card--massa .preco__massa {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 
@@ -1370,6 +1340,163 @@ img {
 }
 
 .c__card--massa .btn__pedido--massa:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all .4s;
+  border: 1px solid #fff;
+}
+
+.js-tabConteudo {
+  display: none;
+}
+
+.js-tabConteudo.ativo {
+  display: block;
+  animation: show 1s forwards;
+}
+
+.c__card--bebida {
+  display: flex;
+  box-shadow: 1px 1px 15px 2px #ff6600;
+  padding-bottom: 1rem;
+}
+
+.c__card--bebida .card__titulo--bebida {
+  font-family: "Merienda", cursive;
+  text-align: center;
+  font-size: 4rem;
+  color: #ff6600;
+  padding: 1rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .c__card--bebida .card__titulo--bebida {
+    font-size: 3rem;
+  }
+}
+
+.c__card--bebida .cardapio__flex--bebida {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: .6rem;
+  perspective: 1000px;
+}
+
+.c__card--bebida .card__item--bebida {
+  padding: 1rem;
+  border-radius: 6px;
+  max-width: 320px;
+  transform: rotateX(3deg);
+  background: rgba(0, 0, 0, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 1px solid #fff;
+}
+
+.c__card--bebida .card__item--bebida:hover {
+  box-shadow: 0 4px 10px #fff;
+  transition: all .6s;
+  transform: rotateX(0deg);
+  border: 1px solid #fff;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .c__card--bebida .card__item--bebida {
+    transform: none;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .c__card--bebida .card__item--bebida {
+    transform: none;
+  }
+}
+
+.c__card--bebida .img__bebida {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.c__card--bebida .card__cabecalho--bebida {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .2rem;
+  margin-bottom: 1rem;
+}
+
+.c__card--bebida .bebida {
+  font-family: "Tangerine", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #EFB321;
+  user-select: none;
+  text-align: center;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .c__card--bebida .bebida {
+    font-size: 3rem;
+    user-select: none;
+  }
+}
+
+.c__card--bebida .preco__item {
+  margin-top: 1.4rem;
+}
+
+.c__card--bebida .precos__bebida {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .c__card--bebida .precos__bebida {
+    gap: .5rem;
+  }
+}
+
+.c__card--bebida .preco__bebida {
+  background-color: #ff6600;
+  padding: .2rem .8rem;
+  border-radius: 5px;
+  font-family: "Neucha", cursive;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #FF8F33;
+  box-shadow: 1px 1px 10px #fff;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .c__card--bebida .preco__bebida {
+    font-size: 1.6rem;
+  }
+}
+
+.c__card--bebida .btn__pedido--bebida {
+  padding: .6rem .8rem;
+  border-radius: 5px;
+  font-family: "Neucha", cursive;
+  font-size: 1.2rem;
+  width: 180px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  color: #fff;
+  margin: 0 auto;
+  background: rgba(255, 102, 0, 0.6);
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #fff;
+}
+
+.c__card--bebida .btn__pedido--bebida:hover {
   background-color: #fff;
   color: #000;
   transition: all .4s;

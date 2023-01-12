@@ -46,21 +46,6 @@
                 border: 1px solid #fff;
             }
 
-            &:hover .pequena {
-                background-color: #fff;
-                box-shadow: 1px 1px 10px $cor-menu-itens;
-            }
-
-            &:hover .media {
-                background-color: #fff;
-                box-shadow: 1px 1px 10px $cor-menu-itens;
-            }
-
-            &:hover .grande {
-                background-color: #fff;
-                box-shadow: 1px 1px 10px $cor-menu-itens;
-            }
-
             @include celular {
                 transform: none;
             }
@@ -134,7 +119,7 @@
         box-shadow: 1px 1px 10px #fff;
 
         @include celular {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
     }
 
@@ -163,19 +148,7 @@
             }
     }
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 .js-tabConteudo {
