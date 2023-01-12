@@ -1,0 +1,42 @@
+.c__card--drink {
+    display: flex;
+    box-shadow: 1px 1px 15px 2px $cor-menu-itens;
+    padding-bottom: 1rem;
+
+    .card__titulo--drink {
+        font-family: $fonte-subtitulo;
+        text-align: center;
+        font-size: 4rem;
+        color: $cor-menu-itens;
+        padding: 1rem;
+
+            @include celular {
+                font-size: 3rem;
+            }
+    }
+
+    .cardapio__flex--drink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: .6rem;
+        perspective: 1000px;
+    }
+
+    
+
+
+
+
+
+}
+
+.js-tabConteudo {
+    display: none;
+}
+
+.js-tabConteudo.ativo {
+    display: block;
+    animation: show 1s forwards;
+}
