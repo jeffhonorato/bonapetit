@@ -526,6 +526,7 @@ img {
     align-items: center;
     place-content: center;
     gap: 0rem;
+    height: 105vh;
   }
 }
 
@@ -570,7 +571,6 @@ img {
 }
 
 .musica__sliders {
-  height: 100vh;
   display: grid;
   align-content: center;
 }
@@ -590,6 +590,12 @@ img {
   height: 500px;
   display: grid;
   place-content: center;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .swiper-slide {
+    height: 200px;
+  }
 }
 
 .cardapio__cabecalho {
