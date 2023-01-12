@@ -10,7 +10,11 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 3rem 0rem;
-    
+
+    @include celular {
+        padding: 6rem 0rem;
+    }
+
 
     .promo__box {
 

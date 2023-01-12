@@ -5,7 +5,7 @@
     background-size: cover;
 
         @include celular {
-            height: 90vh;
+            height: 100vh;
         }
 
 }
@@ -17,13 +17,13 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    height: 90vh;
+    height: 105vh;
 
         @include celular {
-            grid-template-columns: 310px; 
+            grid-template-columns: 320px; 
             align-items: center;
             place-content: center;
-            gap: .5rem;
+            gap: 0rem;
         }
 }
 

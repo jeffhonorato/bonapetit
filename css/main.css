@@ -170,6 +170,12 @@ img {
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
+  .promocao {
+    padding: 6rem 0rem;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
   .promocao .promo__box {
     padding: 6rem 0;
   }
@@ -500,7 +506,7 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .happyhour {
-    height: 90vh;
+    height: 100vh;
   }
 }
 
@@ -511,15 +517,15 @@ img {
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  height: 90vh;
+  height: 105vh;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
   .musica__container {
-    grid-template-columns: 310px;
+    grid-template-columns: 320px;
     align-items: center;
     place-content: center;
-    gap: .5rem;
+    gap: 0rem;
   }
 }
 
