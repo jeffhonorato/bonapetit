@@ -546,6 +546,7 @@ img {
   .musica__titulo {
     margin-top: 18rem;
     margin-bottom: 2rem;
+    text-align: center;
   }
 }
 
@@ -594,7 +595,7 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .swiper-slide {
-    height: 200px;
+    height: 80px;
   }
 }
 

@@ -46,6 +46,7 @@
         @include celular {
             margin-top: 18rem;
             margin-bottom: 2rem;
+            text-align: center;
         }
 }
 
@@ -98,7 +99,7 @@
     place-content: center;
 
         @include celular {
-            height: 200px;
+            height: 80px;
         }
   }
 
