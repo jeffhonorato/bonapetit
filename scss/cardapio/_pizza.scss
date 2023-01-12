@@ -88,6 +88,9 @@
                     }
 
                     @include celular {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         gap: .3rem;
                         padding: .2rem .5rem;
                     }
