@@ -27,13 +27,23 @@
         }
 }
 
+.musica__info {
+
+    @include celular {
+        // height: 300px;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+
 .musica__titulo {
     color: $cor-menu-itens;
     font-family: $fonte-titulo;
     font-size: 4rem;
 
         @include celular {
-            margin-top: 15rem;
+            margin-top: 18rem;
             margin-bottom: 2rem;
         }
 }
