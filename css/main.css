@@ -500,7 +500,7 @@ img {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .happyhour {
-    height: 110vh;
+    height: 90vh;
   }
 }
 
@@ -1198,6 +1198,44 @@ img {
   background-size: cover;
   width: 320px;
   height: 550px;
+}
+
+.c__card--massa {
+  display: flex;
+  box-shadow: 1px 1px 15px 2px #ff6600;
+  padding-bottom: 1rem;
+}
+
+.c__card--massa .card__titulo--massa {
+  font-family: "Merienda", cursive;
+  text-align: center;
+  font-size: 4rem;
+  color: #ff6600;
+  padding: 1rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .c__card--massa .card__titulo--massa {
+    font-size: 3rem;
+  }
+}
+
+.c__card--massa .cardapio__flex--massaa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: .6rem;
+  perspective: 1000px;
+}
+
+.js-tabConteudo {
+  display: none;
+}
+
+.js-tabConteudo.ativo {
+  display: block;
+  animation: show 1s forwards;
 }
 
 .galeria {
