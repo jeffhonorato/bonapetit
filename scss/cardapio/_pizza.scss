@@ -94,10 +94,6 @@
                 
             }
 
-      
-
-            
-
             .btn__pizza,
             .btn__carnes,
             .btn__massas,
@@ -132,7 +128,7 @@
     }
     
 
-    .cardapio__card--pizza {
+    .c__card--pizza {
         display: flex;
         box-shadow: 1px 1px 15px 2px $cor-menu-itens;
         padding-bottom: 1rem;
@@ -228,8 +224,6 @@
                         user-select: none;
                     }
             }
-
-  
 
             .ingredientes {
                 font-family: $fonte-corpo;

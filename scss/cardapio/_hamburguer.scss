@@ -72,6 +72,15 @@
 
 }
 
+.js-tabConteudo {
+    display: none;
+}
+
+.js-tabConteudo.ativo {
+    display: block;
+    animation: show 1s forwards;
+// }
+
 
 
 .swiper {

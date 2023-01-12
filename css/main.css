@@ -717,13 +717,13 @@ img {
   }
 }
 
-.cardapio__card--pizza {
+.c__card--pizza {
   display: flex;
   box-shadow: 1px 1px 15px 2px #ff6600;
   padding-bottom: 1rem;
 }
 
-.cardapio__card--pizza .card__titulo {
+.c__card--pizza .card__titulo {
   font-family: "Merienda", cursive;
   text-align: center;
   font-size: 4rem;
@@ -732,12 +732,12 @@ img {
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
-  .cardapio__card--pizza .card__titulo {
+  .c__card--pizza .card__titulo {
     font-size: 3rem;
   }
 }
 
-.cardapio__card--pizza .cardapio__flex {
+.c__card--pizza .cardapio__flex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -746,7 +746,7 @@ img {
   perspective: 1000px;
 }
 
-.cardapio__card--pizza .card__item {
+.c__card--pizza .card__item {
   padding: 1rem;
   border-radius: 6px;
   max-width: 320px;
@@ -759,41 +759,41 @@ img {
   border: 1px solid #fff;
 }
 
-.cardapio__card--pizza .card__item:hover {
+.c__card--pizza .card__item:hover {
   box-shadow: 0 4px 10px #fff;
   transition: all .6s;
   transform: rotateX(0deg);
   border: 1px solid #fff;
 }
 
-.cardapio__card--pizza .card__item:hover .pequena {
+.c__card--pizza .card__item:hover .pequena {
   background-color: #fff;
   box-shadow: 1px 1px 10px #ff6600;
 }
 
-.cardapio__card--pizza .card__item:hover .media {
+.c__card--pizza .card__item:hover .media {
   background-color: #fff;
   box-shadow: 1px 1px 10px #ff6600;
 }
 
-.cardapio__card--pizza .card__item:hover .grande {
+.c__card--pizza .card__item:hover .grande {
   background-color: #fff;
   box-shadow: 1px 1px 10px #ff6600;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
-  .cardapio__card--pizza .card__item {
+  .c__card--pizza .card__item {
     transform: none;
   }
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  .cardapio__card--pizza .card__item {
+  .c__card--pizza .card__item {
     transform: none;
   }
 }
 
-.cardapio__card--pizza .card__cabecalho {
+.c__card--pizza .card__cabecalho {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -801,12 +801,12 @@ img {
   margin-bottom: 1rem;
 }
 
-.cardapio__card--pizza .ico__animation--pizza {
+.c__card--pizza .ico__animation--pizza {
   display: block;
   margin: 0 auto;
 }
 
-.cardapio__card--pizza .sabor {
+.c__card--pizza .sabor {
   font-family: "Tangerine", cursive;
   font-size: 4rem;
   font-weight: bold;
@@ -815,13 +815,13 @@ img {
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
-  .cardapio__card--pizza .sabor {
+  .c__card--pizza .sabor {
     font-size: 2.7rem;
     user-select: none;
   }
 }
 
-.cardapio__card--pizza .ingredientes {
+.c__card--pizza .ingredientes {
   font-family: "Neucha", cursive;
   font-size: 1.4rem;
   color: #fff;
@@ -830,30 +830,30 @@ img {
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
-  .cardapio__card--pizza .ingredientes {
+  .c__card--pizza .ingredientes {
     font-size: 1.2rem;
   }
 }
 
-.cardapio__card--pizza .preco__item {
+.c__card--pizza .preco__item {
   margin-top: 1.4rem;
 }
 
-.cardapio__card--pizza .precos {
+.c__card--pizza .precos {
   display: flex;
   gap: .5rem;
   justify-content: center;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
-  .cardapio__card--pizza .precos {
+  .c__card--pizza .precos {
     gap: .5rem;
   }
 }
 
-.cardapio__card--pizza .pequena,
-.cardapio__card--pizza .media,
-.cardapio__card--pizza .grande {
+.c__card--pizza .pequena,
+.c__card--pizza .media,
+.c__card--pizza .grande {
   background-color: #ff6600;
   padding: .2rem;
   border-radius: 5px;
@@ -864,33 +864,33 @@ img {
   box-shadow: 1px 1px 10px #fff;
 }
 
-.cardapio__card--pizza .pequena strong,
-.cardapio__card--pizza .media strong,
-.cardapio__card--pizza .grande strong {
+.c__card--pizza .pequena strong,
+.c__card--pizza .media strong,
+.c__card--pizza .grande strong {
   font-size: 1.2rem;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
-  .cardapio__card--pizza .pequena,
-  .cardapio__card--pizza .media,
-  .cardapio__card--pizza .grande {
+  .c__card--pizza .pequena,
+  .c__card--pizza .media,
+  .c__card--pizza .grande {
     font-size: 1rem;
   }
 }
 
-.cardapio__card--pizza .precos__hamburguers {
+.c__card--pizza .precos__hamburguers {
   display: flex;
   gap: .5rem;
   justify-content: center;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
-  .cardapio__card--pizza .precos__hamburguers {
+  .c__card--pizza .precos__hamburguers {
     gap: .5rem;
   }
 }
 
-.cardapio__card--pizza .bordas {
+.c__card--pizza .bordas {
   font-family: "Neucha", cursive;
   color: #fff;
   text-align: center;
@@ -898,7 +898,7 @@ img {
   margin-bottom: 1.2rem;
 }
 
-.cardapio__card--pizza .btn__pedido {
+.c__card--pizza .btn__pedido {
   padding: .6rem .8rem;
   border-radius: 5px;
   font-family: "Neucha", cursive;
@@ -915,14 +915,14 @@ img {
   border: 1px solid #fff;
 }
 
-.cardapio__card--pizza .btn__pedido:hover {
+.c__card--pizza .btn__pedido:hover {
   background-color: #fff;
   color: #000;
   transition: all .4s;
   border: 1px solid #fff;
 }
 
-.cardapio__card--pizza .btn__pedido--hamburguer {
+.c__card--pizza .btn__pedido--hamburguer {
   padding: .6rem .8rem;
   border-radius: 5px;
   font-family: "Neucha", cursive;
@@ -939,19 +939,19 @@ img {
   border: 1px solid #fff;
 }
 
-.cardapio__card--pizza .btn__pedido--hamburguer:hover {
+.c__card--pizza .btn__pedido--hamburguer:hover {
   background-color: #fff;
   color: #000;
   transition: all .4s;
   border: 1px solid #fff;
 }
 
-.cardapio__card--pizza .contato__cardapio {
+.c__card--pizza .contato__cardapio {
   font-size: 1.5rem;
   color: #000;
 }
 
-.cardapio__card--pizza .link__ico {
+.c__card--pizza .link__ico {
   font-size: 1.5rem;
   color: #000;
 }
@@ -1076,6 +1076,15 @@ img {
   .c__card--hamburguer .card__item--hamburguer {
     transform: none;
   }
+}
+
+.js-tabConteudo {
+  display: none;
+}
+
+.js-tabConteudo.ativo {
+  display: block;
+  animation: show 1s forwards;
 }
 
 .swiper {
