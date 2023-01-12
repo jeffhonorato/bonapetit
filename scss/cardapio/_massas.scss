@@ -25,6 +25,145 @@
         perspective: 1000px;
        
     }
+
+    .card__item--massa {
+        padding: 1rem;
+        border-radius: 6px;
+        max-width: 320px;
+        transform: rotateX(3deg);
+      
+        background: rgba(0, 0, 0, 0.34);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(6.6px);
+        -webkit-backdrop-filter: blur(6.6px);
+        border: 1px solid #fff;
+
+            &:hover {
+                box-shadow: 0 4px 10px #fff;
+                transition: all .6s;
+                transform: rotateX(0deg);
+                border: 1px solid #fff;
+            }
+
+            &:hover .pequena {
+                background-color: #fff;
+                box-shadow: 1px 1px 10px $cor-menu-itens;
+            }
+
+            &:hover .media {
+                background-color: #fff;
+                box-shadow: 1px 1px 10px $cor-menu-itens;
+            }
+
+            &:hover .grande {
+                background-color: #fff;
+                box-shadow: 1px 1px 10px $cor-menu-itens;
+            }
+
+            @include celular {
+                transform: none;
+            }
+
+            @include tablet {
+                transform: none;
+            }
+    }
+
+    .ico__animation--massa {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .card__cabecalho--massa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .2rem;
+        margin-bottom: 1rem;
+    }
+
+    .sabor__massa {
+        font-family: $fonte-titulo;
+        font-size: 4rem;
+        font-weight: bold;
+        color: $cor-btn;
+        user-select: none;
+
+            @include celular {
+                font-size: 2.7rem;
+                user-select: none;
+            }
+    }
+
+    .ingredientes__massa {
+        font-family: $fonte-corpo;
+        font-size: 1.4rem;
+        color: #fff;
+        margin-bottom: 1rem;
+        text-align: center;
+
+        @include celular {
+            font-size: 1.2rem;
+        }
+    }
+
+    .preco__item {
+        margin-top: 1.4rem;
+    }
+
+    .precos__massa {
+        display: flex;
+        gap: .5rem;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+            @include celular {
+                gap: .5rem; 
+            }
+    }
+
+    .preco__massa {
+        background-color: $cor-menu-itens;
+        padding: .2rem .8rem;
+        border-radius: 5px;
+        font-family: $fonte-corpo;
+        font-size: 2rem;
+        text-align: center;
+        background-color: #FF8F33;
+        box-shadow: 1px 1px 10px #fff;
+
+        @include celular {
+            font-size: 2.2rem;
+        }
+    }
+
+    .btn__pedido--massa {
+        padding: .6rem .8rem;
+        border-radius: 5px;
+        font-family: $fonte-corpo;
+        font-size: 1.2rem;
+        width: 180px;
+        text-align: center;
+        border-bottom-left-radius: 20px;
+        color: #fff;
+        margin: 0 auto;
+
+        background: rgba(255, 102, 0, 0.6);
+        border-radius: 1rem;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid #fff;
+
+            &:hover {
+                background-color: #fff;
+                color: #000;
+                transition: all .4s;
+                border: 1px solid #fff;
+            }
+    }
+
+
 }
 
 
