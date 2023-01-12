@@ -608,6 +608,7 @@ img {
 @media (min-width: 0px) and (max-width: 480px) {
   .cardapio__cabecalho .titulo__principal {
     font-size: 3.5rem;
+    height: 50vh;
   }
 }
 
