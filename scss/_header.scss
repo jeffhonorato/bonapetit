@@ -31,7 +31,7 @@
         .menu__mobile {
             position: fixed;
             top: 10px;
-            left: 0;
+            left: 5px;
             display: block;
             width: 60px;
             cursor: pointer;
@@ -40,7 +40,7 @@
                 @include celular {
                     position: fixed;
                     top: 10px;
-                    left: 0;
+                    left: 6px;
                     display: block;
                     z-index: 2000;
                     cursor: pointer;
