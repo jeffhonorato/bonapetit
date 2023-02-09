@@ -3,7 +3,7 @@ var swiper = new Swiper(".swiper__musica", {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
-    loop: "true",
+    // loop: "true",
     coverflowEffect: {
       rotate: 10,
       stretch: 0,
