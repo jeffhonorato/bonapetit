@@ -4,15 +4,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
-
+    display: grid;
+    place-content: center;
 
         .logo {
-            width: 25rem;
+            width: 25rem; /* 400px */
             margin: 0 auto;
-            padding-top: 4rem;
 
                 @include celular {
-                    width: 15rem;
+                    width: 20rem; /* 320px */
                 }
         }
 
