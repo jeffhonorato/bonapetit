@@ -164,7 +164,6 @@
                 border-radius: 6px;
                 max-width: 320px;
                 transform: rotateX(3deg);
-              
                 background: rgba(0, 0, 0, 0.34);
                 border-radius: 16px;
                 box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
@@ -175,23 +174,34 @@
                     &:hover {
                         box-shadow: 0 4px 10px #fff;
                         transition: all .6s;
-                        transform: rotateX(0deg);
-                        border: 1px solid #fff;
+                        background: linear-gradient(40deg, #EFB321, #fff);
+                    }
+
+                    &:hover .sabor {
+                        color: #000;
+                    }
+
+                    &:hover .ingredientes {
+                        color: #000;
+                    }
+
+                    &:hover .bordas {
+                        color: #000;
                     }
 
                     &:hover .pequena {
                         background-color: #fff;
-                        box-shadow: 1px 1px 10px $cor-menu-itens;
+                        box-shadow: 10px 1px 10px #000;
                     }
 
                     &:hover .media {
                         background-color: #fff;
-                        box-shadow: 1px 1px 10px $cor-menu-itens;
+                        box-shadow: 10px 1px 10px #000;
                     }
 
                     &:hover .grande {
                         background-color: #fff;
-                        box-shadow: 1px 1px 10px $cor-menu-itens;
+                        box-shadow: 10px 1px 10px #000;
                     }
 
                     @include celular {
